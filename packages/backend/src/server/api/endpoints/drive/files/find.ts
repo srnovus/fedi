@@ -34,7 +34,7 @@ export const paramDef = {
 	type: 'object',
 	properties: {
 		name: { type: 'string' },
-		folderId: { type: 'string', format: 'misskey:id', nullable: true, default: null },
+		folderId: { type: 'string', format: 'fedired:id', nullable: true, default: null },
 	},
 	required: ['name'],
 } as const;

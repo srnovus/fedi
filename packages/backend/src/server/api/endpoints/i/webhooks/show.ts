@@ -31,11 +31,11 @@ export const meta = {
 		properties: {
 			id: {
 				type: 'string',
-				format: 'misskey:id',
+				format: 'fedired:id',
 			},
 			userId: {
 				type: 'string',
-				format: 'misskey:id',
+				format: 'fedired:id',
 			},
 			name: { type: 'string' },
 			on: {
@@ -57,7 +57,7 @@ export const meta = {
 export const paramDef = {
 	type: 'object',
 	properties: {
-		webhookId: { type: 'string', format: 'misskey:id' },
+		webhookId: { type: 'string', format: 'fedired:id' },
 	},
 	required: ['webhookId'],
 } as const;

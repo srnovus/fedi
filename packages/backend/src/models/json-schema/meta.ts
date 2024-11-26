@@ -35,7 +35,7 @@ export const packedMetaLiteSchema = {
 			type: 'string',
 			optional: false, nullable: false,
 			format: 'url',
-			example: 'https://misskey.example.com',
+			example: 'https://fedired.example.com',
 		},
 		description: {
 			type: 'string',
@@ -56,12 +56,12 @@ export const packedMetaLiteSchema = {
 		repositoryUrl: {
 			type: 'string',
 			optional: false, nullable: true,
-			default: 'https://github.com/misskey-dev/misskey',
+			default: 'https://github.com/fedired-dev/fedired',
 		},
 		feedbackUrl: {
 			type: 'string',
 			optional: false, nullable: true,
-			default: 'https://github.com/misskey-dev/misskey/issues/new',
+			default: 'https://github.com/fedired-dev/fedired/issues/new',
 		},
 		defaultDarkTheme: {
 			type: 'string',

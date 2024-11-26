@@ -29,7 +29,7 @@ export const meta = {
 export const paramDef = {
 	type: 'object',
 	properties: {
-		roleId: { type: 'string', format: 'misskey:id' },
+		roleId: { type: 'string', format: 'fedired:id' },
 		name: { type: 'string' },
 		description: { type: 'string' },
 		color: { type: 'string', nullable: true },

@@ -43,8 +43,8 @@ export const paramDef = {
 	type: 'object',
 	properties: {
 		limit: { type: 'integer', minimum: 1, maximum: 100, default: 10 },
-		sinceId: { type: 'string', format: 'misskey:id' },
-		untilId: { type: 'string', format: 'misskey:id' },
+		sinceId: { type: 'string', format: 'fedired:id' },
+		untilId: { type: 'string', format: 'fedired:id' },
 		markAsRead: { type: 'boolean', default: true },
 		// 後方互換のため、廃止された通知タイプも受け付ける
 		includeTypes: { type: 'array', items: {

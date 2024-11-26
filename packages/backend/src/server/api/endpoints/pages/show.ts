@@ -35,7 +35,7 @@ export const meta = {
 export const paramDef = {
 	type: 'object',
 	properties: {
-		pageId: { type: 'string', format: 'misskey:id' },
+		pageId: { type: 'string', format: 'fedired:id' },
 		name: { type: 'string' },
 		username: { type: 'string' },
 	},

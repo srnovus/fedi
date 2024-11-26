@@ -60,7 +60,7 @@ export const paramDef = {
 			type: 'object', additionalProperties: true,
 		} },
 		script: { type: 'string' },
-		eyeCatchingImageId: { type: 'string', format: 'misskey:id', nullable: true },
+		eyeCatchingImageId: { type: 'string', format: 'fedired:id', nullable: true },
 		font: { type: 'string', enum: ['serif', 'sans-serif'], default: 'sans-serif' },
 		alignCenter: { type: 'boolean', default: false },
 		hideTitleWhenPinned: { type: 'boolean', default: false },

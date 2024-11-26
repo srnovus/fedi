@@ -53,7 +53,7 @@ export const paramDef = {
 	properties: {
 		id: {
 			type: 'string',
-			format: 'misskey:id',
+			format: 'fedired:id',
 		},
 		isActive: {
 			type: 'boolean',
@@ -69,11 +69,11 @@ export const paramDef = {
 		},
 		userId: {
 			type: 'string',
-			format: 'misskey:id',
+			format: 'fedired:id',
 		},
 		systemWebhookId: {
 			type: 'string',
-			format: 'misskey:id',
+			format: 'fedired:id',
 		},
 	},
 	required: [

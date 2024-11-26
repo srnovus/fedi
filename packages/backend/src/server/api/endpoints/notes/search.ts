@@ -38,16 +38,16 @@ export const paramDef = {
 	type: 'object',
 	properties: {
 		query: { type: 'string' },
-		sinceId: { type: 'string', format: 'misskey:id' },
-		untilId: { type: 'string', format: 'misskey:id' },
+		sinceId: { type: 'string', format: 'fedired:id' },
+		untilId: { type: 'string', format: 'fedired:id' },
 		limit: { type: 'integer', minimum: 1, maximum: 100, default: 10 },
 		offset: { type: 'integer', default: 0 },
 		host: {
 			type: 'string',
 			description: 'The local host is represented with `.`.',
 		},
-		userId: { type: 'string', format: 'misskey:id', nullable: true, default: null },
-		channelId: { type: 'string', format: 'misskey:id', nullable: true, default: null },
+		userId: { type: 'string', format: 'fedired:id', nullable: true, default: null },
+		channelId: { type: 'string', format: 'fedired:id', nullable: true, default: null },
 	},
 	required: ['query'],
 } as const;

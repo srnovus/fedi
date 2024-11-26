@@ -44,7 +44,7 @@ export const paramDef = {
 	type: 'object',
 	properties: {
 		name: { type: 'string', default: 'Untitled', maxLength: 200 },
-		parentId: { type: 'string', format: 'misskey:id', nullable: true },
+		parentId: { type: 'string', format: 'fedired:id', nullable: true },
 	},
 	required: [],
 } as const;

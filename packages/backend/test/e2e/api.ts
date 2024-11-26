@@ -47,7 +47,7 @@ describe('API', () => {
 			assert.strictEqual(res.status, 400);
 		});
 
-		test('invalid misskey:id (empty string)', async () => {
+		test('invalid fedired:id (empty string)', async () => {
 			const res = await api('test', {
 				required: true,
 				id: '',
@@ -55,7 +55,7 @@ describe('API', () => {
 			assert.strictEqual(res.status, 400);
 		});
 
-		test('valid misskey:id', async () => {
+		test('valid fedired:id', async () => {
 			const res = await api('test', {
 				required: true,
 				id: '8wvhjghbxu',

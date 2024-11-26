@@ -33,7 +33,7 @@ export const meta = {
 export const paramDef = {
 	type: 'object',
 	properties: {
-		channelId: { type: 'string', format: 'misskey:id' },
+		channelId: { type: 'string', format: 'fedired:id' },
 	},
 	required: ['channelId'],
 } as const;

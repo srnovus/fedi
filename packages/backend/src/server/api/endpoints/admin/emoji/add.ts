@@ -41,7 +41,7 @@ export const paramDef = {
 	type: 'object',
 	properties: {
 		name: { type: 'string', pattern: '^[a-zA-Z0-9_]+$' },
-		fileId: { type: 'string', format: 'misskey:id' },
+		fileId: { type: 'string', format: 'fedired:id' },
 		category: {
 			type: 'string',
 			nullable: true,

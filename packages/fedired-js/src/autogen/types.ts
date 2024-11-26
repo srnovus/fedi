@@ -3871,7 +3871,7 @@ export type components = {
         }, {
           /** @enum {string} */
           type: 'list';
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           userListId: string;
         }]>;
         follow?: OneOf<[{
@@ -3880,7 +3880,7 @@ export type components = {
         }, {
           /** @enum {string} */
           type: 'list';
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           userListId: string;
         }]>;
         mention?: OneOf<[{
@@ -3889,7 +3889,7 @@ export type components = {
         }, {
           /** @enum {string} */
           type: 'list';
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           userListId: string;
         }]>;
         reply?: OneOf<[{
@@ -3898,7 +3898,7 @@ export type components = {
         }, {
           /** @enum {string} */
           type: 'list';
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           userListId: string;
         }]>;
         renote?: OneOf<[{
@@ -3907,7 +3907,7 @@ export type components = {
         }, {
           /** @enum {string} */
           type: 'list';
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           userListId: string;
         }]>;
         quote?: OneOf<[{
@@ -3916,7 +3916,7 @@ export type components = {
         }, {
           /** @enum {string} */
           type: 'list';
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           userListId: string;
         }]>;
         reaction?: OneOf<[{
@@ -3925,7 +3925,7 @@ export type components = {
         }, {
           /** @enum {string} */
           type: 'list';
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           userListId: string;
         }]>;
         pollEnded?: OneOf<[{
@@ -3934,7 +3934,7 @@ export type components = {
         }, {
           /** @enum {string} */
           type: 'list';
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           userListId: string;
         }]>;
         receiveFollowRequest?: OneOf<[{
@@ -3943,7 +3943,7 @@ export type components = {
         }, {
           /** @enum {string} */
           type: 'list';
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           userListId: string;
         }]>;
         followRequestAccepted?: OneOf<[{
@@ -3952,7 +3952,7 @@ export type components = {
         }, {
           /** @enum {string} */
           type: 'list';
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           userListId: string;
         }]>;
         roleAssigned?: OneOf<[{
@@ -3961,7 +3961,7 @@ export type components = {
         }, {
           /** @enum {string} */
           type: 'list';
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           userListId: string;
         }]>;
         achievementEarned?: OneOf<[{
@@ -3970,7 +3970,7 @@ export type components = {
         }, {
           /** @enum {string} */
           type: 'list';
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           userListId: string;
         }]>;
         app?: OneOf<[{
@@ -3979,7 +3979,7 @@ export type components = {
         }, {
           /** @enum {string} */
           type: 'list';
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           userListId: string;
         }]>;
         test?: OneOf<[{
@@ -3988,7 +3988,7 @@ export type components = {
         }, {
           /** @enum {string} */
           type: 'list';
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           userListId: string;
         }]>;
       };
@@ -5270,9 +5270,9 @@ export type operations = {
         'application/json': {
           /** @default 10 */
           limit?: number;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           sinceId?: string;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           untilId?: string;
           /** @default null */
           state?: string | null;
@@ -5417,7 +5417,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           id: string;
         };
       };
@@ -5476,9 +5476,9 @@ export type operations = {
           name: string;
           /** @enum {string} */
           method: 'email' | 'webhook';
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           userId?: string;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           systemWebhookId?: string;
         };
       };
@@ -5533,15 +5533,15 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           id: string;
           isActive: boolean;
           name: string;
           /** @enum {string} */
           method: 'email' | 'webhook';
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           userId?: string;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           systemWebhookId?: string;
         };
       };
@@ -5596,7 +5596,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           id: string;
         };
       };
@@ -5703,7 +5703,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           userId: string;
         };
       };
@@ -5869,7 +5869,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           id: string;
         };
       };
@@ -5923,9 +5923,9 @@ export type operations = {
         'application/json': {
           /** @default 10 */
           limit?: number;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           sinceId?: string;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           untilId?: string;
           /** @default null */
           publishing?: boolean | null;
@@ -5981,7 +5981,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           id: string;
           memo?: string;
           url?: string;
@@ -6062,7 +6062,7 @@ export type operations = {
           /** @default false */
           needConfirmationToRead?: boolean;
           /**
-           * Format: misskey:id
+           * Format: fedired:id
            * @default null
            */
           userId?: string | null;
@@ -6131,7 +6131,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           id: string;
         };
       };
@@ -6185,11 +6185,11 @@ export type operations = {
         'application/json': {
           /** @default 10 */
           limit?: number;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           sinceId?: string;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           untilId?: string;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           userId?: string | null;
           /**
            * @default active
@@ -6262,7 +6262,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           id: string;
           title?: string;
           text?: string;
@@ -6392,7 +6392,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           id: string;
         };
       };
@@ -6446,11 +6446,11 @@ export type operations = {
         'application/json': {
           /** @default 10 */
           limit?: number;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           sinceId?: string;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           untilId?: string;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           userId?: string | null;
         };
       };
@@ -6518,7 +6518,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           id: string;
           name?: string;
           description?: string;
@@ -6574,7 +6574,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           userId: string;
         };
       };
@@ -6626,7 +6626,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           userId: string;
         };
       };
@@ -6678,7 +6678,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           userId: string;
         };
       };
@@ -6820,11 +6820,11 @@ export type operations = {
         'application/json': {
           /** @default 10 */
           limit?: number;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           sinceId?: string;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           untilId?: string;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           userId?: string | null;
           type?: string | null;
           /**
@@ -6889,7 +6889,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           fileId?: string;
           url?: string;
         };
@@ -7051,7 +7051,7 @@ export type operations = {
       content: {
         'application/json': {
           name: string;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           fileId: string;
           /** @description Use `null` to reset the category. */
           category?: string | null;
@@ -7112,7 +7112,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           emojiId: string;
         };
       };
@@ -7220,7 +7220,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           id: string;
         };
       };
@@ -7273,7 +7273,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           fileId: string;
         };
       };
@@ -7334,9 +7334,9 @@ export type operations = {
           host?: string | null;
           /** @default 10 */
           limit?: number;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           sinceId?: string;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           untilId?: string;
         };
       };
@@ -7403,9 +7403,9 @@ export type operations = {
           query?: string | null;
           /** @default 10 */
           limit?: number;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           sinceId?: string;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           untilId?: string;
         };
       };
@@ -7678,10 +7678,10 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           id?: string;
           name?: string;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           fileId?: string;
           /** @description Use `null` to reset the category. */
           category?: string | null;
@@ -8046,7 +8046,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           userId: string;
         };
       };
@@ -8222,7 +8222,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           noteId: string;
           expiresAt: number;
         };
@@ -8684,7 +8684,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           userId: string;
         };
       };
@@ -8740,7 +8740,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           reportId: string;
           /** @enum {string|null} */
           resolvedAs?: 'accept' | 'reject' | null;
@@ -8794,7 +8794,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           reportId: string;
         };
       };
@@ -8846,7 +8846,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           reportId: string;
           moderationNote?: string;
         };
@@ -9024,12 +9024,12 @@ export type operations = {
         'application/json': {
           /** @default 10 */
           limit?: number;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           sinceId?: string;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           untilId?: string;
           type?: string | null;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           userId?: string | null;
         };
       };
@@ -9093,7 +9093,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           userId: string;
         };
       };
@@ -9123,7 +9123,7 @@ export type operations = {
               }, {
                 /** @enum {string} */
                 type: 'list';
-                /** Format: misskey:id */
+                /** Format: fedired:id */
                 userListId: string;
               }]>;
               follow?: OneOf<[{
@@ -9132,7 +9132,7 @@ export type operations = {
               }, {
                 /** @enum {string} */
                 type: 'list';
-                /** Format: misskey:id */
+                /** Format: fedired:id */
                 userListId: string;
               }]>;
               mention?: OneOf<[{
@@ -9141,7 +9141,7 @@ export type operations = {
               }, {
                 /** @enum {string} */
                 type: 'list';
-                /** Format: misskey:id */
+                /** Format: fedired:id */
                 userListId: string;
               }]>;
               reply?: OneOf<[{
@@ -9150,7 +9150,7 @@ export type operations = {
               }, {
                 /** @enum {string} */
                 type: 'list';
-                /** Format: misskey:id */
+                /** Format: fedired:id */
                 userListId: string;
               }]>;
               renote?: OneOf<[{
@@ -9159,7 +9159,7 @@ export type operations = {
               }, {
                 /** @enum {string} */
                 type: 'list';
-                /** Format: misskey:id */
+                /** Format: fedired:id */
                 userListId: string;
               }]>;
               quote?: OneOf<[{
@@ -9168,7 +9168,7 @@ export type operations = {
               }, {
                 /** @enum {string} */
                 type: 'list';
-                /** Format: misskey:id */
+                /** Format: fedired:id */
                 userListId: string;
               }]>;
               reaction?: OneOf<[{
@@ -9177,7 +9177,7 @@ export type operations = {
               }, {
                 /** @enum {string} */
                 type: 'list';
-                /** Format: misskey:id */
+                /** Format: fedired:id */
                 userListId: string;
               }]>;
               pollEnded?: OneOf<[{
@@ -9186,7 +9186,7 @@ export type operations = {
               }, {
                 /** @enum {string} */
                 type: 'list';
-                /** Format: misskey:id */
+                /** Format: fedired:id */
                 userListId: string;
               }]>;
               receiveFollowRequest?: OneOf<[{
@@ -9195,7 +9195,7 @@ export type operations = {
               }, {
                 /** @enum {string} */
                 type: 'list';
-                /** Format: misskey:id */
+                /** Format: fedired:id */
                 userListId: string;
               }]>;
               followRequestAccepted?: OneOf<[{
@@ -9204,7 +9204,7 @@ export type operations = {
               }, {
                 /** @enum {string} */
                 type: 'list';
-                /** Format: misskey:id */
+                /** Format: fedired:id */
                 userListId: string;
               }]>;
               roleAssigned?: OneOf<[{
@@ -9213,7 +9213,7 @@ export type operations = {
               }, {
                 /** @enum {string} */
                 type: 'list';
-                /** Format: misskey:id */
+                /** Format: fedired:id */
                 userListId: string;
               }]>;
               achievementEarned?: OneOf<[{
@@ -9222,7 +9222,7 @@ export type operations = {
               }, {
                 /** @enum {string} */
                 type: 'list';
-                /** Format: misskey:id */
+                /** Format: fedired:id */
                 userListId: string;
               }]>;
               app?: OneOf<[{
@@ -9231,7 +9231,7 @@ export type operations = {
               }, {
                 /** @enum {string} */
                 type: 'list';
-                /** Format: misskey:id */
+                /** Format: fedired:id */
                 userListId: string;
               }]>;
               test?: OneOf<[{
@@ -9240,7 +9240,7 @@ export type operations = {
               }, {
                 /** @enum {string} */
                 type: 'list';
-                /** Format: misskey:id */
+                /** Format: fedired:id */
                 userListId: string;
               }]>;
             };
@@ -9378,7 +9378,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           userId: string;
         };
       };
@@ -9430,7 +9430,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           userId: string;
         };
       };
@@ -9528,7 +9528,7 @@ export type operations = {
           sensitiveMediaDetectionSensitivity?: 'medium' | 'low' | 'high' | 'veryLow' | 'veryHigh';
           setSensitiveFlagAutomatically?: boolean;
           enableSensitiveMediaDetectionForVideos?: boolean;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           proxyAccountId?: string | null;
           maintainerName?: string | null;
           maintainerEmail?: string | null;
@@ -9651,7 +9651,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           userId: string;
         };
       };
@@ -9703,7 +9703,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           userId: string;
           text: string;
         };
@@ -9824,7 +9824,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           roleId: string;
         };
       };
@@ -9922,7 +9922,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           roleId: string;
         };
       };
@@ -9976,7 +9976,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           roleId: string;
           name?: string;
           description?: string;
@@ -10043,9 +10043,9 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           roleId: string;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           userId: string;
           expiresAt?: number | null;
         };
@@ -10098,9 +10098,9 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           roleId: string;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           userId: string;
         };
       };
@@ -10203,11 +10203,11 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           roleId: string;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           sinceId?: string;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           untilId?: string;
           /** @default 10 */
           limit?: number;
@@ -10219,7 +10219,7 @@ export type operations = {
       200: {
         content: {
           'application/json': ({
-              /** Format: misskey:id */
+              /** Format: fedired:id */
               id: string;
               /** Format: date-time */
               createdAt: string;
@@ -10330,7 +10330,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           id: string;
         };
       };
@@ -10438,7 +10438,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           id: string;
         };
       };
@@ -10493,7 +10493,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           id: string;
           isActive: boolean;
           name: string;
@@ -10553,7 +10553,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           webhookId: string;
           /** @enum {string} */
           type: 'abuseReport' | 'abuseReportResolved' | 'userCreated' | 'inactiveModeratorsWarning' | 'inactiveModeratorsInvitationOnlyChanged';
@@ -10619,9 +10619,9 @@ export type operations = {
         'application/json': {
           /** @default 10 */
           limit?: number;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           sinceId?: string;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           untilId?: string;
           /** @default true */
           isActive?: boolean;
@@ -10677,7 +10677,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           announcementId: string;
         };
       };
@@ -10734,7 +10734,7 @@ export type operations = {
           name: string;
           /** @enum {string} */
           src: 'home' | 'all' | 'users' | 'list' | 'users_blacklist';
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           userListId?: string | null;
           keywords: string[][];
           excludeKeywords: string[][];
@@ -10796,7 +10796,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           antennaId: string;
         };
       };
@@ -10894,13 +10894,13 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           antennaId: string;
           /** @default 10 */
           limit?: number;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           sinceId?: string;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           untilId?: string;
           sinceDate?: number;
           untilDate?: number;
@@ -10956,7 +10956,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           antennaId: string;
         };
       };
@@ -11010,12 +11010,12 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           antennaId: string;
           name?: string;
           /** @enum {string} */
           src?: 'home' | 'all' | 'users' | 'list' | 'users_blacklist';
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           userListId?: string | null;
           keywords?: string[][];
           excludeKeywords?: string[][];
@@ -11259,7 +11259,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           appId: string;
         };
       };
@@ -11537,7 +11537,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           userId: string;
         };
       };
@@ -11597,7 +11597,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           userId: string;
         };
       };
@@ -11659,9 +11659,9 @@ export type operations = {
         'application/json': {
           /** @default 30 */
           limit?: number;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           sinceId?: string;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           untilId?: string;
         };
       };
@@ -11717,7 +11717,7 @@ export type operations = {
         'application/json': {
           name: string;
           description?: string | null;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           bannerId?: string | null;
           color?: string;
           isSensitive?: boolean | null;
@@ -11826,7 +11826,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           channelId: string;
         };
       };
@@ -11878,9 +11878,9 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           sinceId?: string;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           untilId?: string;
           /** @default 5 */
           limit?: number;
@@ -11936,9 +11936,9 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           sinceId?: string;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           untilId?: string;
           /** @default 5 */
           limit?: number;
@@ -11994,7 +11994,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           channelId: string;
         };
       };
@@ -12048,13 +12048,13 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           channelId: string;
           /** @default 10 */
           limit?: number;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           sinceId?: string;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           untilId?: string;
           sinceDate?: number;
           untilDate?: number;
@@ -12112,7 +12112,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           channelId: string;
         };
       };
@@ -12164,11 +12164,11 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           channelId: string;
           name?: string;
           description?: string | null;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           bannerId?: string | null;
           isArchived?: boolean | null;
           pinnedNoteIds?: string[];
@@ -12227,7 +12227,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           channelId: string;
         };
       };
@@ -12279,7 +12279,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           channelId: string;
         };
       };
@@ -12383,9 +12383,9 @@ export type operations = {
            * @enum {string}
            */
           type?: 'nameAndDescription' | 'nameOnly';
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           sinceId?: string;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           untilId?: string;
           /** @default 5 */
           limit?: number;
@@ -12894,7 +12894,7 @@ export type operations = {
           limit?: number;
           /** @default null */
           offset?: number | null;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           userId: string;
         };
       };
@@ -12961,7 +12961,7 @@ export type operations = {
           limit?: number;
           /** @default null */
           offset?: number | null;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           userId: string;
         };
       };
@@ -13046,7 +13046,7 @@ export type operations = {
           limit?: number;
           /** @default null */
           offset?: number | null;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           userId: string;
         };
       };
@@ -13116,7 +13116,7 @@ export type operations = {
           limit?: number;
           /** @default null */
           offset?: number | null;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           userId: string;
         };
       };
@@ -13185,7 +13185,7 @@ export type operations = {
           limit?: number;
           /** @default null */
           offset?: number | null;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           userId: string;
         };
       };
@@ -13315,9 +13315,9 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           clipId: string;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           noteId: string;
         };
       };
@@ -13375,9 +13375,9 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           clipId: string;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           noteId: string;
         };
       };
@@ -13485,7 +13485,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           clipId: string;
         };
       };
@@ -13583,13 +13583,13 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           clipId: string;
           /** @default 10 */
           limit?: number;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           sinceId?: string;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           untilId?: string;
         };
       };
@@ -13643,7 +13643,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           clipId: string;
         };
       };
@@ -13697,7 +13697,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           clipId: string;
           name?: string;
           isPublic?: boolean;
@@ -13754,7 +13754,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           clipId: string;
         };
       };
@@ -13806,7 +13806,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           clipId: string;
         };
       };
@@ -13955,12 +13955,12 @@ export type operations = {
         'application/json': {
           /** @default 10 */
           limit?: number;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           sinceId?: string;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           untilId?: string;
           /**
-           * Format: misskey:id
+           * Format: fedired:id
            * @default null
            */
           folderId?: string | null;
@@ -14019,13 +14019,13 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           sinceId?: string;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           untilId?: string;
           /** @default 10 */
           limit?: number;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           fileId: string;
         };
       };
@@ -14133,7 +14133,7 @@ export type operations = {
       content: {
         'multipart/form-data': {
           /**
-           * Format: misskey:id
+           * Format: fedired:id
            * @default null
            */
           folderId?: string | null;
@@ -14208,7 +14208,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           fileId: string;
         };
       };
@@ -14315,7 +14315,7 @@ export type operations = {
         'application/json': {
           name: string;
           /**
-           * Format: misskey:id
+           * Format: fedired:id
            * @default null
            */
           folderId?: string | null;
@@ -14371,7 +14371,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           fileId?: string;
           url?: string;
         };
@@ -14426,9 +14426,9 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           fileId: string;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           folderId?: string | null;
           name?: string;
           isSensitive?: boolean;
@@ -14487,7 +14487,7 @@ export type operations = {
         'application/json': {
           url: string;
           /**
-           * Format: misskey:id
+           * Format: fedired:id
            * @default null
            */
           folderId?: string | null;
@@ -14557,12 +14557,12 @@ export type operations = {
         'application/json': {
           /** @default 10 */
           limit?: number;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           sinceId?: string;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           untilId?: string;
           /**
-           * Format: misskey:id
+           * Format: fedired:id
            * @default null
            */
           folderId?: string | null;
@@ -14620,7 +14620,7 @@ export type operations = {
         'application/json': {
           /** @default Untitled */
           name?: string;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           parentId?: string | null;
         };
       };
@@ -14680,7 +14680,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           folderId: string;
         };
       };
@@ -14734,7 +14734,7 @@ export type operations = {
         'application/json': {
           name: string;
           /**
-           * Format: misskey:id
+           * Format: fedired:id
            * @default null
            */
           parentId?: string | null;
@@ -14790,7 +14790,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           folderId: string;
         };
       };
@@ -14844,10 +14844,10 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           folderId: string;
           name?: string;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           parentId?: string | null;
         };
       };
@@ -14903,9 +14903,9 @@ export type operations = {
         'application/json': {
           /** @default 10 */
           limit?: number;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           sinceId?: string;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           untilId?: string;
           type?: string;
         };
@@ -15176,9 +15176,9 @@ export type operations = {
       content: {
         'application/json': {
           host: string;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           sinceId?: string;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           untilId?: string;
           /** @default 10 */
           limit?: number;
@@ -15235,9 +15235,9 @@ export type operations = {
       content: {
         'application/json': {
           host: string;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           sinceId?: string;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           untilId?: string;
           /** @default 10 */
           limit?: number;
@@ -15417,7 +15417,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           userId: string;
         };
       };
@@ -15470,9 +15470,9 @@ export type operations = {
       content: {
         'application/json': {
           host: string;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           sinceId?: string;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           untilId?: string;
           /** @default 10 */
           limit?: number;
@@ -15587,7 +15587,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           userId: string;
           withReplies?: boolean;
         };
@@ -15648,7 +15648,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           userId: string;
         };
       };
@@ -15708,7 +15708,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           userId: string;
           /** @enum {string} */
           notify?: 'normal' | 'none';
@@ -15830,7 +15830,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           userId: string;
         };
       };
@@ -15890,7 +15890,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           userId: string;
         };
       };
@@ -15942,7 +15942,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           userId: string;
         };
       };
@@ -15996,9 +15996,9 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           sinceId?: string;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           untilId?: string;
           /** @default 10 */
           limit?: number;
@@ -16059,9 +16059,9 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           sinceId?: string;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           untilId?: string;
           /** @default 10 */
           limit?: number;
@@ -16122,7 +16122,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           userId: string;
         };
       };
@@ -16176,7 +16176,7 @@ export type operations = {
         'application/json': {
           /** @default 10 */
           limit?: number;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           untilId?: string;
         };
       };
@@ -16278,9 +16278,9 @@ export type operations = {
         'application/json': {
           /** @default 10 */
           limit?: number;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           sinceId?: string;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           untilId?: string;
         };
       };
@@ -16397,7 +16397,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           postId: string;
         };
       };
@@ -16449,7 +16449,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           postId: string;
         };
       };
@@ -16501,7 +16501,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           postId: string;
         };
       };
@@ -16555,7 +16555,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           postId: string;
         };
       };
@@ -16607,7 +16607,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           postId: string;
           title?: string;
           description?: string | null;
@@ -17600,7 +17600,7 @@ export type operations = {
       200: {
         content: {
           'application/json': {
-              /** Format: misskey:id */
+              /** Format: fedired:id */
               id: string;
               name?: string;
               /** Format: date-time */
@@ -17671,7 +17671,7 @@ export type operations = {
       200: {
         content: {
           'application/json': ({
-              /** Format: misskey:id */
+              /** Format: fedired:id */
               id: string;
               name: string;
               callbackUrl: string | null;
@@ -18301,9 +18301,9 @@ export type operations = {
         'application/json': {
           /** @default 10 */
           limit?: number;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           sinceId?: string;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           untilId?: string;
         };
       };
@@ -18359,9 +18359,9 @@ export type operations = {
         'application/json': {
           /** @default 10 */
           limit?: number;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           sinceId?: string;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           untilId?: string;
         };
       };
@@ -18421,9 +18421,9 @@ export type operations = {
         'application/json': {
           /** @default 10 */
           limit?: number;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           sinceId?: string;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           untilId?: string;
         };
       };
@@ -18478,7 +18478,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           fileId: string;
         };
       };
@@ -18537,7 +18537,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           fileId: string;
           withReplies?: boolean;
         };
@@ -18597,7 +18597,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           fileId: string;
         };
       };
@@ -18656,7 +18656,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           fileId: string;
         };
       };
@@ -18715,7 +18715,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           fileId: string;
         };
       };
@@ -18775,9 +18775,9 @@ export type operations = {
         'application/json': {
           /** @default 10 */
           limit?: number;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           sinceId?: string;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           untilId?: string;
           /** @default true */
           markAsRead?: boolean;
@@ -18843,9 +18843,9 @@ export type operations = {
         'application/json': {
           /** @default 10 */
           limit?: number;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           sinceId?: string;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           untilId?: string;
           /** @default true */
           markAsRead?: boolean;
@@ -18911,9 +18911,9 @@ export type operations = {
         'application/json': {
           /** @default 10 */
           limit?: number;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           sinceId?: string;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           untilId?: string;
         };
       };
@@ -18973,9 +18973,9 @@ export type operations = {
         'application/json': {
           /** @default 10 */
           limit?: number;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           sinceId?: string;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           untilId?: string;
         };
       };
@@ -19029,7 +19029,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           noteId: string;
         };
       };
@@ -19127,7 +19127,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           announcementId: string;
         };
       };
@@ -19673,7 +19673,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           tokenId?: string;
           token?: string | null;
         };
@@ -19729,9 +19729,9 @@ export type operations = {
         'application/json': {
           /** @default 10 */
           limit?: number;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           sinceId?: string;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           untilId?: string;
         };
       };
@@ -19785,7 +19785,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           noteId: string;
         };
       };
@@ -19908,17 +19908,17 @@ export type operations = {
           birthday?: string | null;
           /** @enum {string|null} */
           lang?: null | 'ach' | 'ady' | 'af' | 'af-NA' | 'af-ZA' | 'ak' | 'ar' | 'ar-AR' | 'ar-MA' | 'ar-SA' | 'ay-BO' | 'az' | 'az-AZ' | 'be-BY' | 'bg' | 'bg-BG' | 'bn' | 'bn-IN' | 'bn-BD' | 'br' | 'bs-BA' | 'ca' | 'ca-ES' | 'cak' | 'ck-US' | 'cs' | 'cs-CZ' | 'cy' | 'cy-GB' | 'da' | 'da-DK' | 'de' | 'de-AT' | 'de-DE' | 'de-CH' | 'dsb' | 'el' | 'el-GR' | 'en' | 'en-GB' | 'en-AU' | 'en-CA' | 'en-IE' | 'en-IN' | 'en-PI' | 'en-SG' | 'en-UD' | 'en-US' | 'en-ZA' | 'en@pirate' | 'eo' | 'eo-EO' | 'es' | 'es-AR' | 'es-419' | 'es-CL' | 'es-CO' | 'es-EC' | 'es-ES' | 'es-LA' | 'es-NI' | 'es-MX' | 'es-US' | 'es-VE' | 'et' | 'et-EE' | 'eu' | 'eu-ES' | 'fa' | 'fa-IR' | 'fb-LT' | 'ff' | 'fi' | 'fi-FI' | 'fo' | 'fo-FO' | 'fr' | 'fr-CA' | 'fr-FR' | 'fr-BE' | 'fr-CH' | 'fy-NL' | 'ga' | 'ga-IE' | 'gd' | 'gl' | 'gl-ES' | 'gn-PY' | 'gu-IN' | 'gv' | 'gx-GR' | 'he' | 'he-IL' | 'hi' | 'hi-IN' | 'hr' | 'hr-HR' | 'hsb' | 'ht' | 'hu' | 'hu-HU' | 'hy' | 'hy-AM' | 'id' | 'id-ID' | 'is' | 'is-IS' | 'it' | 'it-IT' | 'ja' | 'ja-JP' | 'jv-ID' | 'ka-GE' | 'kk-KZ' | 'km' | 'kl' | 'km-KH' | 'kab' | 'kn' | 'kn-IN' | 'ko' | 'ko-KR' | 'ku-TR' | 'kw' | 'la' | 'la-VA' | 'lb' | 'li-NL' | 'lt' | 'lt-LT' | 'lv' | 'lv-LV' | 'mai' | 'mg-MG' | 'mk' | 'mk-MK' | 'ml' | 'ml-IN' | 'mn-MN' | 'mr' | 'mr-IN' | 'ms' | 'ms-MY' | 'mt' | 'mt-MT' | 'my' | 'no' | 'nb' | 'nb-NO' | 'ne' | 'ne-NP' | 'nl' | 'nl-BE' | 'nl-NL' | 'nn-NO' | 'oc' | 'or-IN' | 'pa' | 'pa-IN' | 'pl' | 'pl-PL' | 'ps-AF' | 'pt' | 'pt-BR' | 'pt-PT' | 'qu-PE' | 'rm-CH' | 'ro' | 'ro-RO' | 'ru' | 'ru-RU' | 'sa-IN' | 'se-NO' | 'sh' | 'si-LK' | 'sk' | 'sk-SK' | 'sl' | 'sl-SI' | 'so-SO' | 'sq' | 'sq-AL' | 'sr' | 'sr-RS' | 'su' | 'sv' | 'sv-SE' | 'sw' | 'sw-KE' | 'ta' | 'ta-IN' | 'te' | 'te-IN' | 'tg' | 'tg-TJ' | 'th' | 'th-TH' | 'fil' | 'tlh' | 'tr' | 'tr-TR' | 'tt-RU' | 'uk' | 'uk-UA' | 'ur' | 'ur-PK' | 'uz' | 'uz-UZ' | 'vi' | 'vi-VN' | 'xh-ZA' | 'yi' | 'yi-DE' | 'zh' | 'zh-Hans' | 'zh-Hant' | 'zh-CN' | 'zh-HK' | 'zh-SG' | 'zh-TW' | 'zu-ZA';
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           avatarId?: string | null;
           avatarDecorations?: ({
-              /** Format: misskey:id */
+              /** Format: fedired:id */
               id: string;
               angle?: number | null;
               flipH?: boolean | null;
               offsetX?: number | null;
               offsetY?: number | null;
             })[];
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           bannerId?: string | null;
           fields?: {
               name: string;
@@ -19945,7 +19945,7 @@ export type operations = {
           followingVisibility?: 'public' | 'followers' | 'private';
           /** @enum {string} */
           followersVisibility?: 'public' | 'followers' | 'private';
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           pinnedPageId?: string | null;
           mutedWords?: (string[] | string)[];
           hardMutedWords?: (string[] | string)[];
@@ -19957,7 +19957,7 @@ export type operations = {
             }, {
               /** @enum {string} */
               type: 'list';
-              /** Format: misskey:id */
+              /** Format: fedired:id */
               userListId: string;
             }]>;
             follow?: OneOf<[{
@@ -19966,7 +19966,7 @@ export type operations = {
             }, {
               /** @enum {string} */
               type: 'list';
-              /** Format: misskey:id */
+              /** Format: fedired:id */
               userListId: string;
             }]>;
             mention?: OneOf<[{
@@ -19975,7 +19975,7 @@ export type operations = {
             }, {
               /** @enum {string} */
               type: 'list';
-              /** Format: misskey:id */
+              /** Format: fedired:id */
               userListId: string;
             }]>;
             reply?: OneOf<[{
@@ -19984,7 +19984,7 @@ export type operations = {
             }, {
               /** @enum {string} */
               type: 'list';
-              /** Format: misskey:id */
+              /** Format: fedired:id */
               userListId: string;
             }]>;
             renote?: OneOf<[{
@@ -19993,7 +19993,7 @@ export type operations = {
             }, {
               /** @enum {string} */
               type: 'list';
-              /** Format: misskey:id */
+              /** Format: fedired:id */
               userListId: string;
             }]>;
             quote?: OneOf<[{
@@ -20002,7 +20002,7 @@ export type operations = {
             }, {
               /** @enum {string} */
               type: 'list';
-              /** Format: misskey:id */
+              /** Format: fedired:id */
               userListId: string;
             }]>;
             reaction?: OneOf<[{
@@ -20011,7 +20011,7 @@ export type operations = {
             }, {
               /** @enum {string} */
               type: 'list';
-              /** Format: misskey:id */
+              /** Format: fedired:id */
               userListId: string;
             }]>;
             pollEnded?: OneOf<[{
@@ -20020,7 +20020,7 @@ export type operations = {
             }, {
               /** @enum {string} */
               type: 'list';
-              /** Format: misskey:id */
+              /** Format: fedired:id */
               userListId: string;
             }]>;
             receiveFollowRequest?: OneOf<[{
@@ -20029,7 +20029,7 @@ export type operations = {
             }, {
               /** @enum {string} */
               type: 'list';
-              /** Format: misskey:id */
+              /** Format: fedired:id */
               userListId: string;
             }]>;
             followRequestAccepted?: OneOf<[{
@@ -20038,7 +20038,7 @@ export type operations = {
             }, {
               /** @enum {string} */
               type: 'list';
-              /** Format: misskey:id */
+              /** Format: fedired:id */
               userListId: string;
             }]>;
             roleAssigned?: OneOf<[{
@@ -20047,7 +20047,7 @@ export type operations = {
             }, {
               /** @enum {string} */
               type: 'list';
-              /** Format: misskey:id */
+              /** Format: fedired:id */
               userListId: string;
             }]>;
             achievementEarned?: OneOf<[{
@@ -20056,7 +20056,7 @@ export type operations = {
             }, {
               /** @enum {string} */
               type: 'list';
-              /** Format: misskey:id */
+              /** Format: fedired:id */
               userListId: string;
             }]>;
             app?: OneOf<[{
@@ -20065,7 +20065,7 @@ export type operations = {
             }, {
               /** @enum {string} */
               type: 'list';
-              /** Format: misskey:id */
+              /** Format: fedired:id */
               userListId: string;
             }]>;
             test?: OneOf<[{
@@ -20074,7 +20074,7 @@ export type operations = {
             }, {
               /** @enum {string} */
               type: 'list';
-              /** Format: misskey:id */
+              /** Format: fedired:id */
               userListId: string;
             }]>;
           };
@@ -20211,9 +20211,9 @@ export type operations = {
       200: {
         content: {
           'application/json': {
-            /** Format: misskey:id */
+            /** Format: fedired:id */
             id: string;
-            /** Format: misskey:id */
+            /** Format: fedired:id */
             userId: string;
             name: string;
             on: ('mention' | 'unfollow' | 'follow' | 'followed' | 'note' | 'reply' | 'renote' | 'reaction')[];
@@ -20270,9 +20270,9 @@ export type operations = {
       200: {
         content: {
           'application/json': ({
-              /** Format: misskey:id */
+              /** Format: fedired:id */
               id: string;
-              /** Format: misskey:id */
+              /** Format: fedired:id */
               userId: string;
               name: string;
               on: ('mention' | 'unfollow' | 'follow' | 'followed' | 'note' | 'reply' | 'renote' | 'reaction')[];
@@ -20327,7 +20327,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           webhookId: string;
         };
       };
@@ -20337,9 +20337,9 @@ export type operations = {
       200: {
         content: {
           'application/json': {
-            /** Format: misskey:id */
+            /** Format: fedired:id */
             id: string;
-            /** Format: misskey:id */
+            /** Format: fedired:id */
             userId: string;
             name: string;
             on: ('mention' | 'unfollow' | 'follow' | 'followed' | 'note' | 'reply' | 'renote' | 'reaction')[];
@@ -20394,7 +20394,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           webhookId: string;
           name?: string;
           url?: string;
@@ -20451,7 +20451,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           webhookId: string;
         };
       };
@@ -20504,7 +20504,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           webhookId: string;
           /** @enum {string} */
           type: 'mention' | 'unfollow' | 'follow' | 'followed' | 'note' | 'reply' | 'renote' | 'reaction';
@@ -20614,7 +20614,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           inviteId: string;
         };
       };
@@ -20668,9 +20668,9 @@ export type operations = {
         'application/json': {
           /** @default 30 */
           limit?: number;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           sinceId?: string;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           untilId?: string;
         };
       };
@@ -20987,7 +20987,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           userId: string;
           /** @description A Unix Epoch timestamp that must lie in the future. `null` means an indefinite mute. */
           expiresAt?: number | null;
@@ -21047,7 +21047,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           userId: string;
         };
       };
@@ -21101,9 +21101,9 @@ export type operations = {
         'application/json': {
           /** @default 30 */
           limit?: number;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           sinceId?: string;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           untilId?: string;
         };
       };
@@ -21157,7 +21157,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           userId: string;
         };
       };
@@ -21215,7 +21215,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           userId: string;
         };
       };
@@ -21269,9 +21269,9 @@ export type operations = {
         'application/json': {
           /** @default 30 */
           limit?: number;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           sinceId?: string;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           untilId?: string;
         };
       };
@@ -21389,9 +21389,9 @@ export type operations = {
           poll?: boolean;
           /** @default 10 */
           limit?: number;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           sinceId?: string;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           untilId?: string;
         };
       };
@@ -21445,13 +21445,13 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           noteId: string;
           /** @default 10 */
           limit?: number;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           sinceId?: string;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           untilId?: string;
         };
       };
@@ -21505,7 +21505,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           noteId: string;
         };
       };
@@ -21559,7 +21559,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           noteId: string;
           /** @default 10 */
           limit?: number;
@@ -21637,11 +21637,11 @@ export type operations = {
           noExtractHashtags?: boolean;
           /** @default false */
           noExtractEmojis?: boolean;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           replyId?: string | null;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           renoteId?: string | null;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           channelId?: string | null;
           text?: string | null;
           fileIds?: string[];
@@ -21712,7 +21712,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           noteId: string;
         };
       };
@@ -21770,7 +21770,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           noteId: string;
         };
       };
@@ -21828,7 +21828,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           noteId: string;
         };
       };
@@ -21882,9 +21882,9 @@ export type operations = {
         'application/json': {
           /** @default 10 */
           limit?: number;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           untilId?: string;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           channelId?: string | null;
         };
       };
@@ -21944,9 +21944,9 @@ export type operations = {
           withRenotes?: boolean;
           /** @default 10 */
           limit?: number;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           sinceId?: string;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           untilId?: string;
           sinceDate?: number;
           untilDate?: number;
@@ -22004,9 +22004,9 @@ export type operations = {
         'application/json': {
           /** @default 10 */
           limit?: number;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           sinceId?: string;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           untilId?: string;
           sinceDate?: number;
           untilDate?: number;
@@ -22084,9 +22084,9 @@ export type operations = {
           withReplies?: boolean;
           /** @default 10 */
           limit?: number;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           sinceId?: string;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           untilId?: string;
           /** @default false */
           allowPartial?: boolean;
@@ -22148,9 +22148,9 @@ export type operations = {
           following?: boolean;
           /** @default 10 */
           limit?: number;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           sinceId?: string;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           untilId?: string;
           visibility?: string;
         };
@@ -22263,7 +22263,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           noteId: string;
           choice: number;
         };
@@ -22316,14 +22316,14 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           noteId: string;
           type?: string | null;
           /** @default 10 */
           limit?: number;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           sinceId?: string;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           untilId?: string;
         };
       };
@@ -22377,7 +22377,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           noteId: string;
           reaction: string;
         };
@@ -22430,7 +22430,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           noteId: string;
         };
       };
@@ -22488,13 +22488,13 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           noteId: string;
           /** @default 10 */
           limit?: number;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           sinceId?: string;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           untilId?: string;
         };
       };
@@ -22548,11 +22548,11 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           noteId: string;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           sinceId?: string;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           untilId?: string;
           /** @default 10 */
           limit?: number;
@@ -22619,9 +22619,9 @@ export type operations = {
           withFiles?: boolean;
           /** @default null */
           poll?: boolean | null;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           sinceId?: string;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           untilId?: string;
           /** @default 10 */
           limit?: number;
@@ -22681,9 +22681,9 @@ export type operations = {
       content: {
         'application/json': {
           query: string;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           sinceId?: string;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           untilId?: string;
           /** @default 10 */
           limit?: number;
@@ -22692,12 +22692,12 @@ export type operations = {
           /** @description The local host is represented with `.`. */
           host?: string;
           /**
-           * Format: misskey:id
+           * Format: fedired:id
            * @default null
            */
           userId?: string | null;
           /**
-           * Format: misskey:id
+           * Format: fedired:id
            * @default null
            */
           channelId?: string | null;
@@ -22753,7 +22753,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           noteId: string;
         };
       };
@@ -22807,7 +22807,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           noteId: string;
         };
       };
@@ -22864,7 +22864,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           noteId: string;
         };
       };
@@ -22922,7 +22922,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           noteId: string;
         };
       };
@@ -22976,9 +22976,9 @@ export type operations = {
         'application/json': {
           /** @default 10 */
           limit?: number;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           sinceId?: string;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           untilId?: string;
           sinceDate?: number;
           untilDate?: number;
@@ -23046,7 +23046,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           noteId: string;
           targetLang: string;
         };
@@ -23108,7 +23108,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           noteId: string;
         };
       };
@@ -23166,13 +23166,13 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           listId: string;
           /** @default 10 */
           limit?: number;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           sinceId?: string;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           untilId?: string;
           sinceDate?: number;
           untilDate?: number;
@@ -23441,7 +23441,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           pageId: string;
           event: string;
           var?: unknown;
@@ -23505,7 +23505,7 @@ export type operations = {
               [key: string]: unknown;
             }[];
           script: string;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           eyeCatchingImageId?: string | null;
           /**
            * @default sans-serif
@@ -23574,7 +23574,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           pageId: string;
         };
       };
@@ -23672,7 +23672,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           pageId: string;
         };
       };
@@ -23724,7 +23724,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           pageId?: string;
           name?: string;
           username?: string;
@@ -23780,7 +23780,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           pageId: string;
         };
       };
@@ -23832,7 +23832,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           pageId: string;
           title?: string;
           name?: string;
@@ -23844,7 +23844,7 @@ export type operations = {
               [key: string]: unknown;
             }[];
           script?: string;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           eyeCatchingImageId?: string | null;
           /** @enum {string} */
           font?: 'serif' | 'sans-serif';
@@ -23973,7 +23973,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           flashId: string;
         };
       };
@@ -24081,7 +24081,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           flashId: string;
         };
       };
@@ -24133,7 +24133,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           flashId: string;
         };
       };
@@ -24187,7 +24187,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           flashId: string;
         };
       };
@@ -24239,7 +24239,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           flashId: string;
           title?: string;
           summary?: string;
@@ -24305,9 +24305,9 @@ export type operations = {
         'application/json': {
           /** @default 10 */
           limit?: number;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           sinceId?: string;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           untilId?: string;
         };
       };
@@ -24363,9 +24363,9 @@ export type operations = {
         'application/json': {
           /** @default 10 */
           limit?: number;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           sinceId?: string;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           untilId?: string;
         };
       };
@@ -24517,7 +24517,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           noteId: string;
         };
       };
@@ -24615,7 +24615,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           roleId: string;
         };
       };
@@ -24669,11 +24669,11 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           roleId: string;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           sinceId?: string;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           untilId?: string;
           /** @default 10 */
           limit?: number;
@@ -24685,7 +24685,7 @@ export type operations = {
       200: {
         content: {
           'application/json': {
-              /** Format: misskey:id */
+              /** Format: fedired:id */
               id: string;
               user: components['schemas']['UserDetailed'];
             }[];
@@ -24733,13 +24733,13 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           roleId: string;
           /** @default 10 */
           limit?: number;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           sinceId?: string;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           untilId?: string;
           sinceDate?: number;
           untilDate?: number;
@@ -25305,7 +25305,7 @@ export type operations = {
           default?: string;
           /** @default hello */
           nullableDefault?: string | null;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           id?: string;
         };
       };
@@ -25315,7 +25315,7 @@ export type operations = {
       200: {
         content: {
           'application/json': {
-            /** Format: misskey:id */
+            /** Format: fedired:id */
             id?: string;
             required: boolean;
             string?: string;
@@ -25495,13 +25495,13 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           userId: string;
           /** @default 10 */
           limit?: number;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           sinceId?: string;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           untilId?: string;
         };
       };
@@ -25555,13 +25555,13 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           sinceId?: string;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           untilId?: string;
           /** @default 10 */
           limit?: number;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           userId?: string;
           username?: string;
           /** @description The local host is represented with `null`. */
@@ -25618,13 +25618,13 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           sinceId?: string;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           untilId?: string;
           /** @default 10 */
           limit?: number;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           userId?: string;
           username?: string;
           /** @description The local host is represented with `null`. */
@@ -25682,13 +25682,13 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           userId: string;
           /** @default 10 */
           limit?: number;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           sinceId?: string;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           untilId?: string;
         };
       };
@@ -25742,7 +25742,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           userId: string;
           /** @default 10 */
           limit?: number;
@@ -25803,9 +25803,9 @@ export type operations = {
         'application/json': {
           /** @default 10 */
           limit?: number;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           untilId?: string;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           userId: string;
         };
       };
@@ -25912,7 +25912,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           listId: string;
         };
       };
@@ -25964,7 +25964,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           userId?: string;
         };
       };
@@ -26018,9 +26018,9 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           listId: string;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           userId: string;
         };
       };
@@ -26072,9 +26072,9 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           listId: string;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           userId: string;
         };
       };
@@ -26132,7 +26132,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           listId: string;
           /** @default false */
           forPublic?: boolean;
@@ -26188,7 +26188,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           listId: string;
         };
       };
@@ -26240,7 +26240,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           listId: string;
         };
       };
@@ -26292,7 +26292,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           listId: string;
           name?: string;
           isPublic?: boolean;
@@ -26349,7 +26349,7 @@ export type operations = {
       content: {
         'application/json': {
           name: string;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           listId: string;
         };
       };
@@ -26403,9 +26403,9 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           listId: string;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           userId: string;
           withReplies?: boolean;
         };
@@ -26458,15 +26458,15 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           listId: string;
           /** @default false */
           forPublic?: boolean;
           /** @default 30 */
           limit?: number;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           sinceId?: string;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           untilId?: string;
         };
       };
@@ -26476,11 +26476,11 @@ export type operations = {
       200: {
         content: {
           'application/json': {
-              /** Format: misskey:id */
+              /** Format: fedired:id */
               id: string;
               /** Format: date-time */
               createdAt: string;
-              /** Format: misskey:id */
+              /** Format: fedired:id */
               userId: string;
               user: components['schemas']['UserLite'];
               withReplies: boolean;
@@ -26529,7 +26529,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           userId: string;
           /** @default false */
           withReplies?: boolean;
@@ -26539,9 +26539,9 @@ export type operations = {
           withChannelNotes?: boolean;
           /** @default 10 */
           limit?: number;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           sinceId?: string;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           untilId?: string;
           sinceDate?: number;
           untilDate?: number;
@@ -26601,13 +26601,13 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           userId: string;
           /** @default 10 */
           limit?: number;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           sinceId?: string;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           untilId?: string;
         };
       };
@@ -26661,13 +26661,13 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           userId: string;
           /** @default 10 */
           limit?: number;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           sinceId?: string;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           untilId?: string;
         };
       };
@@ -26721,13 +26721,13 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           userId: string;
           /** @default 10 */
           limit?: number;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           sinceId?: string;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           untilId?: string;
           sinceDate?: number;
           untilDate?: number;
@@ -26914,7 +26914,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           userId: string;
           comment: string;
         };
@@ -27089,7 +27089,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           userId?: string;
           userIds?: string[];
           username?: string;
@@ -27147,7 +27147,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           userId: string;
         };
       };
@@ -27204,7 +27204,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           userId: string;
           /** @description A personal memo for the target user. If null or empty, delete the memo. */
           memo: string | null;
@@ -27545,7 +27545,7 @@ export type operations = {
       200: {
         content: {
           'application/json': {
-              /** Format: misskey:id */
+              /** Format: fedired:id */
               id: string;
               score: number;
               user?: components['schemas']['UserLite'];
@@ -27594,7 +27594,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           userId?: string | null;
         };
       };
@@ -27648,9 +27648,9 @@ export type operations = {
         'application/json': {
           /** @default 10 */
           limit?: number;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           sinceId?: string;
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           untilId?: string;
           /** @default false */
           my?: boolean;
@@ -27706,7 +27706,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           userId?: string | null;
           /** @default false */
           noIrregularRules?: boolean;
@@ -27814,7 +27814,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           gameId: string;
         };
       };
@@ -27868,7 +27868,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           gameId: string;
         };
       };
@@ -27920,7 +27920,7 @@ export type operations = {
     requestBody: {
       content: {
         'application/json': {
-          /** Format: misskey:id */
+          /** Format: fedired:id */
           gameId: string;
           crc32: string;
         };

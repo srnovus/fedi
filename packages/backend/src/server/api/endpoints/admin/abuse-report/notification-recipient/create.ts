@@ -65,11 +65,11 @@ export const paramDef = {
 		},
 		userId: {
 			type: 'string',
-			format: 'misskey:id',
+			format: 'fedired:id',
 		},
 		systemWebhookId: {
 			type: 'string',
-			format: 'misskey:id',
+			format: 'fedired:id',
 		},
 	},
 	required: [

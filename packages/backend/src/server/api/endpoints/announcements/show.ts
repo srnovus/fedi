@@ -32,7 +32,7 @@ export const meta = {
 export const paramDef = {
 	type: 'object',
 	properties: {
-		announcementId: { type: 'string', format: 'misskey:id' },
+		announcementId: { type: 'string', format: 'fedired:id' },
 	},
 	required: ['announcementId'],
 } as const;

@@ -25,7 +25,7 @@ export const meta = {
 			optional: false, nullable: false,
 			properties: {
 				id: {
-					type: 'string', format: 'misskey:id',
+					type: 'string', format: 'fedired:id',
 					optional: false, nullable: false,
 				},
 				score: {

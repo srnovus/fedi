@@ -39,9 +39,9 @@ export const meta = {
 export const paramDef = {
 	type: 'object',
 	properties: {
-		id: { type: 'string', format: 'misskey:id' },
+		id: { type: 'string', format: 'fedired:id' },
 		name: { type: 'string', pattern: '^[a-zA-Z0-9_]+$' },
-		fileId: { type: 'string', format: 'misskey:id' },
+		fileId: { type: 'string', format: 'fedired:id' },
 		category: {
 			type: 'string',
 			nullable: true,
@@ -79,7 +79,7 @@ export default class extends Endpoint<typeof meta, typeof paramDef> { // eslint-
 			}
 
 			// JSON schemeのanyOfの型変換がうまくいっていないらしい
-			const required = { id: ps.id, name: ps.name } as 
+			const required = { id: ps.id, name: ps.name } as
 				| { id: MiEmoji['id']; name?: string }
 				| { id?: MiEmoji['id']; name: string };
 

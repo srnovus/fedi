@@ -17,7 +17,7 @@ export const meta = {
 export const paramDef = {
 	type: 'object',
 	properties: {
-		tokenId: { type: 'string', format: 'misskey:id' },
+		tokenId: { type: 'string', format: 'fedired:id' },
 		token: { type: 'string', nullable: true },
 	},
 	anyOf: [

@@ -36,7 +36,7 @@ export const paramDef = {
 	properties: {
 		webhookId: {
 			type: 'string',
-			format: 'misskey:id',
+			format: 'fedired:id',
 		},
 		type: {
 			type: 'string',

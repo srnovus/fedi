@@ -61,7 +61,7 @@ export const paramDef = {
 		forExistingUsers: { type: 'boolean', default: false },
 		silence: { type: 'boolean', default: false },
 		needConfirmationToRead: { type: 'boolean', default: false },
-		userId: { type: 'string', format: 'misskey:id', nullable: true, default: null },
+		userId: { type: 'string', format: 'fedired:id', nullable: true, default: null },
 	},
 	required: ['title', 'text', 'imageUrl'],
 } as const;

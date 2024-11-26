@@ -22,7 +22,7 @@ export const meta = {
 			properties: {
 				id: {
 					type: 'string',
-					format: 'misskey:id',
+					format: 'fedired:id',
 					optional: false,
 				},
 				name: {

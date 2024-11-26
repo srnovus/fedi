@@ -34,8 +34,8 @@ export const paramDef = {
 	type: 'object',
 	properties: {
 		limit: { type: 'integer', minimum: 1, maximum: 100, default: 10 },
-		untilId: { type: 'string', format: 'misskey:id' },
-		channelId: { type: 'string', nullable: true, format: 'misskey:id' },
+		untilId: { type: 'string', format: 'fedired:id' },
+		channelId: { type: 'string', nullable: true, format: 'fedired:id' },
 	},
 	required: [],
 } as const;

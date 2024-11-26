@@ -61,9 +61,9 @@ export const meta = {
 export const paramDef = {
 	type: 'object',
 	properties: {
-		userId: { type: 'string', format: 'misskey:id' },
+		userId: { type: 'string', format: 'fedired:id' },
 		userIds: { type: 'array', uniqueItems: true, items: {
-			type: 'string', format: 'misskey:id',
+			type: 'string', format: 'fedired:id',
 		} },
 		username: { type: 'string' },
 		host: {

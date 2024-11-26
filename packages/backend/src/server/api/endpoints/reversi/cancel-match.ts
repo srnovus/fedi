@@ -19,7 +19,7 @@ export const meta = {
 export const paramDef = {
 	type: 'object',
 	properties: {
-		userId: { type: 'string', format: 'misskey:id', nullable: true },
+		userId: { type: 'string', format: 'fedired:id', nullable: true },
 	},
 	required: [],
 } as const;

@@ -38,7 +38,7 @@ export const paramDef = {
 	properties: {
 		id: {
 			type: 'string',
-			format: 'misskey:id',
+			format: 'fedired:id',
 		},
 	},
 	required: ['id'],

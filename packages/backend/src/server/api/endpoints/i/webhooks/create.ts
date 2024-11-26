@@ -34,11 +34,11 @@ export const meta = {
 		properties: {
 			id: {
 				type: 'string',
-				format: 'misskey:id',
+				format: 'fedired:id',
 			},
 			userId: {
 				type: 'string',
-				format: 'misskey:id',
+				format: 'fedired:id',
 			},
 			name: { type: 'string' },
 			on: {

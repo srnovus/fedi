@@ -37,7 +37,7 @@ export const meta = {
 export const paramDef = {
 	type: 'object',
 	properties: {
-		listId: { type: 'string', format: 'misskey:id' },
+		listId: { type: 'string', format: 'fedired:id' },
 		name: { type: 'string', minLength: 1, maxLength: 100 },
 		isPublic: { type: 'boolean' },
 	},

@@ -53,8 +53,8 @@ export const meta = {
 export const paramDef = {
 	type: 'object',
 	properties: {
-		clipId: { type: 'string', format: 'misskey:id' },
-		noteId: { type: 'string', format: 'misskey:id' },
+		clipId: { type: 'string', format: 'fedired:id' },
+		noteId: { type: 'string', format: 'fedired:id' },
 	},
 	required: ['clipId', 'noteId'],
 } as const;

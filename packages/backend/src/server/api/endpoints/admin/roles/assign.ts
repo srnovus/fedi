@@ -41,8 +41,8 @@ export const meta = {
 export const paramDef = {
 	type: 'object',
 	properties: {
-		roleId: { type: 'string', format: 'misskey:id' },
-		userId: { type: 'string', format: 'misskey:id' },
+		roleId: { type: 'string', format: 'fedired:id' },
+		userId: { type: 'string', format: 'fedired:id' },
 		expiresAt: {
 			type: 'integer',
 			nullable: true,

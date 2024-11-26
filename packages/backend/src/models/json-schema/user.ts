@@ -29,7 +29,7 @@ export const notificationRecieveConfig = {
 				},
 				userListId: {
 					type: 'string',
-					format: 'misskey:id',
+					format: 'fedired:id',
 				},
 			},
 			required: ['type', 'userListId'],
@@ -59,7 +59,7 @@ export const packedUserLiteSchema = {
 		host: {
 			type: 'string',
 			nullable: true, optional: false,
-			example: 'misskey.example.com',
+			example: 'fedired.example.com',
 			description: 'The local host is represented with `null`.',
 		},
 		avatarUrl: {

@@ -33,8 +33,8 @@ export const paramDef = {
 	properties: {
 		query: { type: 'string' },
 		type: { type: 'string', enum: ['nameAndDescription', 'nameOnly'], default: 'nameAndDescription' },
-		sinceId: { type: 'string', format: 'misskey:id' },
-		untilId: { type: 'string', format: 'misskey:id' },
+		sinceId: { type: 'string', format: 'fedired:id' },
+		untilId: { type: 'string', format: 'fedired:id' },
 		limit: { type: 'integer', minimum: 1, maximum: 100, default: 5 },
 	},
 	required: ['query'],

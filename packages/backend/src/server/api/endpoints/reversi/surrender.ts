@@ -37,7 +37,7 @@ export const meta = {
 export const paramDef = {
 	type: 'object',
 	properties: {
-		gameId: { type: 'string', format: 'misskey:id' },
+		gameId: { type: 'string', format: 'fedired:id' },
 	},
 	required: ['gameId'],
 } as const;

@@ -28,7 +28,7 @@ export const paramDef = {
 	properties: {
 		id: {
 			type: 'string',
-			format: 'misskey:id',
+			format: 'fedired:id',
 		},
 		isActive: {
 			type: 'boolean',

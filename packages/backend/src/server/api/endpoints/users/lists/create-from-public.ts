@@ -66,7 +66,7 @@ export const paramDef = {
 	type: 'object',
 	properties: {
 		name: { type: 'string', minLength: 1, maxLength: 100 },
-		listId: { type: 'string', format: 'misskey:id' },
+		listId: { type: 'string', format: 'fedired:id' },
 	},
 	required: ['name', 'listId'],
 } as const;

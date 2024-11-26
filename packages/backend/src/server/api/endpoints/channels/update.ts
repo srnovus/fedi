@@ -48,15 +48,15 @@ export const meta = {
 export const paramDef = {
 	type: 'object',
 	properties: {
-		channelId: { type: 'string', format: 'misskey:id' },
+		channelId: { type: 'string', format: 'fedired:id' },
 		name: { type: 'string', minLength: 1, maxLength: 128 },
 		description: { type: 'string', nullable: true, minLength: 1, maxLength: 2048 },
-		bannerId: { type: 'string', format: 'misskey:id', nullable: true },
+		bannerId: { type: 'string', format: 'fedired:id', nullable: true },
 		isArchived: { type: 'boolean', nullable: true },
 		pinnedNoteIds: {
 			type: 'array',
 			items: {
-				type: 'string', format: 'misskey:id',
+				type: 'string', format: 'fedired:id',
 			},
 		},
 		color: { type: 'string', minLength: 1, maxLength: 16 },

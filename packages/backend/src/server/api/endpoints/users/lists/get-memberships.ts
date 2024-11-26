@@ -34,7 +34,7 @@ export const meta = {
 			properties: {
 				id: {
 					type: 'string',
-					format: 'misskey:id',
+					format: 'fedired:id',
 				},
 				createdAt: {
 					type: 'string',
@@ -42,7 +42,7 @@ export const meta = {
 				},
 				userId: {
 					type: 'string',
-					format: 'misskey:id',
+					format: 'fedired:id',
 				},
 				user: {
 					type: 'object',
@@ -59,11 +59,11 @@ export const meta = {
 export const paramDef = {
 	type: 'object',
 	properties: {
-		listId: { type: 'string', format: 'misskey:id' },
+		listId: { type: 'string', format: 'fedired:id' },
 		forPublic: { type: 'boolean', default: false },
 		limit: { type: 'integer', minimum: 1, maximum: 100, default: 30 },
-		sinceId: { type: 'string', format: 'misskey:id' },
-		untilId: { type: 'string', format: 'misskey:id' },
+		sinceId: { type: 'string', format: 'fedired:id' },
+		untilId: { type: 'string', format: 'fedired:id' },
 	},
 	required: ['listId'],
 } as const;

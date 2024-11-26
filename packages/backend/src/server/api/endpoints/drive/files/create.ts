@@ -62,7 +62,7 @@ export const meta = {
 export const paramDef = {
 	type: 'object',
 	properties: {
-		folderId: { type: 'string', format: 'misskey:id', nullable: true, default: null },
+		folderId: { type: 'string', format: 'fedired:id', nullable: true, default: null },
 		name: { type: 'string', nullable: true, default: null },
 		comment: { type: 'string', nullable: true, maxLength: DB_MAX_IMAGE_COMMENT_LENGTH, default: null },
 		isSensitive: { type: 'boolean', default: false },

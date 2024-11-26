@@ -31,7 +31,7 @@ export const meta = {
 export const paramDef = {
 	type: 'object',
 	properties: {
-		reportId: { type: 'string', format: 'misskey:id' },
+		reportId: { type: 'string', format: 'fedired:id' },
 		resolvedAs: { type: 'string', enum: ['accept', 'reject', null], nullable: true },
 	},
 	required: ['reportId'],

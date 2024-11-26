@@ -17,7 +17,7 @@ const ajv = new Ajv({
 	useDefaults: true,
 });
 
-ajv.addFormat('misskey:id', /^[a-zA-Z0-9]+$/);
+ajv.addFormat('fedired:id', /^[a-zA-Z0-9]+$/);
 
 export type Response = Record<string, any> | void;
 

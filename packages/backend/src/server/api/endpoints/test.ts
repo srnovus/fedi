@@ -18,7 +18,7 @@ export const meta = {
 		properties: {
 			id: {
 				type: 'string',
-				format: 'misskey:id',
+				format: 'fedired:id',
 				optional: true, nullable: false,
 			},
 			required: {
@@ -49,7 +49,7 @@ export const paramDef = {
 		string: { type: 'string' },
 		default: { type: 'string', default: 'hello' },
 		nullableDefault: { type: 'string', nullable: true, default: 'hello' },
-		id: { type: 'string', format: 'misskey:id' },
+		id: { type: 'string', format: 'fedired:id' },
 	},
 	required: ['required'],
 } as const;

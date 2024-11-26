@@ -50,10 +50,10 @@ export const meta = {
 export const paramDef = {
 	type: 'object',
 	properties: {
-		antennaId: { type: 'string', format: 'misskey:id' },
+		antennaId: { type: 'string', format: 'fedired:id' },
 		name: { type: 'string', minLength: 1, maxLength: 100 },
 		src: { type: 'string', enum: ['home', 'all', 'users', 'list', 'users_blacklist'] },
-		userListId: { type: 'string', format: 'misskey:id', nullable: true },
+		userListId: { type: 'string', format: 'fedired:id', nullable: true },
 		keywords: { type: 'array', items: {
 			type: 'array', items: {
 				type: 'string',

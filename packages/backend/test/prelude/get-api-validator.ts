@@ -10,7 +10,7 @@ export const getValidator = (paramDef: Schema) => {
 	const ajv = new Ajv.default({
 		useDefaults: true,
 	});
-	ajv.addFormat('misskey:id', /^[a-zA-Z0-9]+$/);
+	ajv.addFormat('fedired:id', /^[a-zA-Z0-9]+$/);
 
 	return ajv.compile(paramDef);
 };
