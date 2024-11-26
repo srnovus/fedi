@@ -26,7 +26,7 @@
 		"fedired-js": "workspace:*",
 		"frontend-shared": "workspace:*",
 		"punycode": "2.3.1",
-		"rollup": "4.26.0",
+		"rollup": "4.27.4",
 		"sass": "1.79.4",
 		"shiki": "1.22.2",
 		"tinycolor2": "1.6.0",

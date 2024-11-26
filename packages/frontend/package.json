@@ -57,7 +57,7 @@
 		"misskey-reversi": "workspace:*",
 		"photoswipe": "5.4.4",
 		"punycode": "2.3.1",
-		"rollup": "4.26.0",
+		"rollup": "4.27.4",
 		"sanitize-html": "2.13.1",
 		"sass": "1.79.3",
 		"shiki": "1.22.2",
