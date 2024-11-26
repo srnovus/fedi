@@ -5,13 +5,13 @@ on:
     branches:
       - master
       - develop
-      - improve-misskey-js-autogen-check
+      - improve-fedired-js-autogen-check
     paths:
       - packages/backend/**
 
 jobs:
   # pull_request_target safety: permissions: read-all, and there are no secrets used in this job
-  generate-misskey-js:
+  generate-fedired-js:
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -46,20 +46,20 @@ jobs:
         run: pnpm --filter backend generate-api-json
 
       # build misskey js
-      - name: Build misskey-js
+      - name: Build fedired-js
         run: |-
-          cp packages/backend/built/api.json packages/misskey-js/generator/api.json
-          pnpm run --filter misskey-js-type-generator generate
+          cp packages/backend/built/api.json packages/fedired-js/generator/api.json
+          pnpm run --filter fedired-js-type-generator generate
 
-      # packages/misskey-js/generator/built/autogen
+      # packages/fedired-js/generator/built/autogen
       - name: Upload Generated
         uses: actions/upload-artifact@v4
         with:
-          name: generated-misskey-js
-          path: packages/misskey-js/generator/built/autogen
+          name: generated-fedired-js
+          path: packages/fedired-js/generator/built/autogen
 
   # pull_request_target safety: permissions: read-all, and no user codes are executed
-  get-actual-misskey-js:
+  get-actual-fedired-js:
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -75,61 +75,61 @@ jobs:
       - name: Upload From Merged
         uses: actions/upload-artifact@v4
         with:
-          name: actual-misskey-js
-          path: packages/misskey-js/src/autogen
+          name: actual-fedired-js
+          path: packages/fedired-js/src/autogen
 
   # pull_request_target safety: nothing is cloned from repository
-  comment-misskey-js-autogen:
+  comment-fedired-js-autogen:
     runs-on: ubuntu-latest
-    needs: [generate-misskey-js, get-actual-misskey-js]
+    needs: [generate-fedired-js, get-actual-fedired-js]
     permissions:
       pull-requests: write
     steps:
-      - name: download generated-misskey-js
+      - name: download generated-fedired-js
         uses: actions/download-artifact@v4
         with:
-          name: generated-misskey-js
-          path: misskey-js-generated
+          name: generated-fedired-js
+          path: fedired-js-generated
 
-      - name: download actual-misskey-js
+      - name: download actual-fedired-js
         uses: actions/download-artifact@v4
         with:
-          name: actual-misskey-js
-          path: misskey-js-actual
+          name: actual-fedired-js
+          path: fedired-js-actual
 
-      - name: check misskey-js changes
+      - name: check fedired-js changes
         id: check-changes
         run: |
-          diff -r -u --label=generated --label=on-tree ./misskey-js-generated ./misskey-js-actual > misskey-js.diff || true
+          diff -r -u --label=generated --label=on-tree ./fedired-js-generated ./fedired-js-actual > fedired-js.diff || true
 
-          if [ -s misskey-js.diff ]; then
+          if [ -s fedired-js.diff ]; then
             echo "changes=true" >> $GITHUB_OUTPUT
           else
             echo "changes=false" >> $GITHUB_OUTPUT
           fi
 
       - name: Print full diff
-        run: cat ./misskey-js.diff
+        run: cat ./fedired-js.diff
 
       - name: send message
         if: steps.check-changes.outputs.changes == 'true'
         uses: thollander/actions-comment-pull-request@v2
         with:
-          comment_tag: check-misskey-js-autogen
+          comment_tag: check-fedired-js-autogen
           message: |-
             Thank you for sending us a great Pull Request! 👍
-            Please regenerate misskey-js type definitions! 🙏
+            Please regenerate fedired-js type definitions! 🙏
 
             example:
             ```sh
-            pnpm run build-misskey-js-with-types
+            pnpm run build-fedired-js-with-types
             ```
 
       - name: send message
         if: steps.check-changes.outputs.changes == 'false'
         uses: thollander/actions-comment-pull-request@v2
         with:
-          comment_tag: check-misskey-js-autogen
+          comment_tag: check-fedired-js-autogen
           mode: delete
           message: "Thank you!"
           create_if_not_exists: false

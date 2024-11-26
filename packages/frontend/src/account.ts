@@ -4,7 +4,7 @@
  */
 
 import { defineAsyncComponent, reactive, ref } from 'vue';
-import * as Misskey from 'misskey-js';
+import * as Misskey from 'fedired-js';
 import { apiUrl } from '@@/js/config.js';
 import type { MenuItem, MenuButton } from '@/types/menu.js';
 import { showSuspendedDialog } from '@/scripts/show-suspended-dialog.js';

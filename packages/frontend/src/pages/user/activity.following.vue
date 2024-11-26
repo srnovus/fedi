@@ -16,7 +16,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 <script lang="ts" setup>
 import { onMounted, shallowRef, ref } from 'vue';
 import { Chart, ChartDataset } from 'chart.js';
-import * as Misskey from 'misskey-js';
+import * as Misskey from 'fedired-js';
 import gradient from 'chartjs-plugin-gradient';
 import { misskeyApi } from '@/scripts/misskey-api.js';
 import { defaultStore } from '@/store.js';

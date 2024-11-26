@@ -23,7 +23,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 
 <script lang="ts" setup>
 import { computed, ref } from 'vue';
-import * as Misskey from 'misskey-js';
+import * as Misskey from 'fedired-js';
 import { v4 as uuid } from 'uuid';
 import XHeader from './_header_.vue';
 import XEditor from './roles.editor.vue';

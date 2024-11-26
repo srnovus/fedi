@@ -1,7 +1,7 @@
 {
 	"type": "module",
-	"name": "misskey-js",
-	"version": "2024.11.1-alpha.0",
+	"name": "fedired-js",
+	"version": "0.0.1-alpha.0",
 	"description": "Misskey SDK for JavaScript",
 	"license": "MIT",
 	"main": "./built/index.js",
@@ -27,12 +27,12 @@
 		"lint": "pnpm typecheck && pnpm eslint",
 		"jest": "jest --coverage --detectOpenHandles",
 		"test": "pnpm jest && pnpm tsd",
-		"update-autogen-code": "pnpm --filter misskey-js-type-generator generate && ncp generator/built/autogen src/autogen"
+		"update-autogen-code": "pnpm --filter fedired-js-type-generator generate && ncp generator/built/autogen src/autogen"
 	},
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/misskey-dev/misskey.git",
-		"directory": "packages/misskey-js"
+		"directory": "packages/fedired-js"
 	},
 	"devDependencies": {
 		"@microsoft/api-extractor": "7.47.11",

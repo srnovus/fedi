@@ -4,7 +4,7 @@
 [![Test](https://github.com/misskey-dev/misskey.js/actions/workflows/test.yml/badge.svg)](https://github.com/misskey-dev/misskey.js/actions/workflows/test.yml)
 [![codecov](https://codecov.io/gh/misskey-dev/misskey.js/branch/develop/graph/badge.svg?token=PbrTtk3nVD)](https://codecov.io/gh/misskey-dev/misskey.js)
 
-[![NPM](https://nodei.co/npm/misskey-js.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/misskey-js)
+[![NPM](https://nodei.co/npm/fedired-js.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/fedired-js)
 
 JavaScript(TypeScript)用の公式MisskeySDKです。ブラウザ/Node.js上で動作します。
 
@@ -19,14 +19,14 @@ JavaScript(TypeScript)用の公式MisskeySDKです。ブラウザ/Node.js上で�
 
 ## Install
 ```
-npm i misskey-js
+npm i fedired-js
 ```
 
 # Usage
 インポートは以下のようにまとめて行うと便利です。
 
 ``` ts
-import * as Misskey from 'misskey-js';
+import * as Misskey from 'fedired-js';
 ```
 
 便宜上、以後のコード例は上記のように`* as Misskey`としてインポートしている前提のものになります。
@@ -34,7 +34,7 @@ import * as Misskey from 'misskey-js';
 ただし、このインポート方法だとTree-Shakingできなくなるので、コードサイズが重要なユースケースでは以下のような個別インポートをお勧めします。
 
 ``` ts
-import { api as misskeyApi } from 'misskey-js';
+import { api as misskeyApi } from 'fedired-js';
 ```
 
 ## Authenticate

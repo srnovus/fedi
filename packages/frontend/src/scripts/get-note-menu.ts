@@ -4,7 +4,7 @@
  */
 
 import { defineAsyncComponent, Ref, ShallowRef } from 'vue';
-import * as Misskey from 'misskey-js';
+import * as Misskey from 'fedired-js';
 import { claimAchievement } from './achievements.js';
 import { $i } from '@/account.js';
 import { i18n } from '@/i18n.js';

@@ -6,7 +6,7 @@
 import { Inject, Injectable } from '@nestjs/common';
 import bcrypt from 'bcryptjs';
 import { IsNull } from 'typeorm';
-import * as Misskey from 'misskey-js';
+import * as Misskey from 'fedired-js';
 import { DI } from '@/di-symbols.js';
 import type {
 	MiMeta,

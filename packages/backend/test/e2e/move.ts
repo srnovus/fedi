@@ -14,7 +14,7 @@ import { MiRepository, MiUser, UsersRepository, miRepository } from '@/models/_.
 import { secureRndstr } from '@/misc/secure-rndstr.js';
 import { jobQueue } from '@/boot/common.js';
 import { api, castAsError, initTestDb, signup, successfulApiCall, uploadFile } from '../utils.js';
-import type * as misskey from 'misskey-js';
+import type * as misskey from 'fedired-js';
 
 describe('Account Move', () => {
 	let jq: INestApplicationContext;

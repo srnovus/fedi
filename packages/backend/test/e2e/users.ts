@@ -8,7 +8,7 @@ process.env.NODE_ENV = 'test';
 import * as assert from 'assert';
 import { inspect } from 'node:util';
 import { api, post, role, signup, successfulApiCall, uploadFile } from '../utils.js';
-import type * as misskey from 'misskey-js';
+import type * as misskey from 'fedired-js';
 import { DEFAULT_POLICIES } from '@/core/RoleService.js';
 
 describe('ユーザー', () => {

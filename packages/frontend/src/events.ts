@@ -4,7 +4,7 @@
  */
 
 import { EventEmitter } from 'eventemitter3';
-import * as Misskey from 'misskey-js';
+import * as Misskey from 'fedired-js';
 
 export const globalEvents = new EventEmitter<{
 	themeChanged: () => void;

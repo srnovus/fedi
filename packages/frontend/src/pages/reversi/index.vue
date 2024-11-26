@@ -106,7 +106,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 
 <script lang="ts" setup>
 import { onDeactivated, onMounted, onUnmounted, ref } from 'vue';
-import * as Misskey from 'misskey-js';
+import * as Misskey from 'fedired-js';
 import { misskeyApi } from '@/scripts/misskey-api.js';
 import { definePageMetadata } from '@/scripts/page-metadata.js';
 import { useStream } from '@/stream.js';

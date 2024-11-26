@@ -35,7 +35,7 @@ import { notificationTypes } from '@@/js/const.js';
 import { infoImageUrl } from '@/instance.js';
 import { defaultStore } from '@/store.js';
 import MkPullToRefresh from '@/components/MkPullToRefresh.vue';
-import * as Misskey from 'misskey-js';
+import * as Misskey from 'fedired-js';
 
 const props = defineProps<{
 	excludeTypes?: typeof notificationTypes[number][];

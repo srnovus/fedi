@@ -27,7 +27,7 @@ await Promise.all([
 		stdout: process.stdout,
 		stderr: process.stderr,
 	}),
-	execa('pnpm', ['--filter', 'misskey-js', 'build'], {
+	execa('pnpm', ['--filter', 'fedired-js', 'build'], {
 		cwd: _dirname + '/../',
 		stdout: process.stdout,
 		stderr: process.stderr,
@@ -89,7 +89,7 @@ execa('pnpm', ['--filter', 'sw', 'watch'], {
 	stderr: process.stderr,
 });
 
-execa('pnpm', ['--filter', 'misskey-js', 'watch'], {
+execa('pnpm', ['--filter', 'fedired-js', 'watch'], {
 	cwd: _dirname + '/../',
 	stdout: process.stdout,
 	stderr: process.stderr,

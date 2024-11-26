@@ -7,7 +7,7 @@ process.env.NODE_ENV = 'test';
 
 import { validateContentTypeSetAsActivityPub, validateContentTypeSetAsJsonLD } from '@/core/activitypub/misc/validator.js';
 import { signup, uploadFile, relativeFetch } from '../utils.js';
-import type * as misskey from 'misskey-js';
+import type * as misskey from 'fedired-js';
 
 describe('validateContentTypeSetAsActivityPub/JsonLD (deny case)', () => {
 	let alice: misskey.entities.SignupResponse;

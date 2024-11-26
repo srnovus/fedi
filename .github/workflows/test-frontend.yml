@@ -8,7 +8,7 @@ on:
     paths:
       - packages/frontend/**
       # for permissions
-      - packages/misskey-js/**
+      - packages/fedired-js/**
       # for e2e
       - packages/backend/**
       - .github/workflows/test-frontend.yml
@@ -16,7 +16,7 @@ on:
     paths:
       - packages/frontend/**
       # for permissions
-      - packages/misskey-js/**
+      - packages/fedired-js/**
       # for e2e
       - packages/backend/**
       - .github/workflows/test-frontend.yml

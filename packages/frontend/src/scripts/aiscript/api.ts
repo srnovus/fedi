@@ -4,7 +4,7 @@
  */
 
 import { utils, values } from '@syuilo/aiscript';
-import * as Misskey from 'misskey-js';
+import * as Misskey from 'fedired-js';
 import * as os from '@/os.js';
 import { misskeyApi } from '@/scripts/misskey-api.js';
 import { $i } from '@/account.js';

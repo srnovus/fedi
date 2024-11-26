@@ -111,7 +111,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 
 <script lang="ts" setup>
 import { computed, watch, ref, onMounted, shallowRef, onUnmounted } from 'vue';
-import * as Misskey from 'misskey-js';
+import * as Misskey from 'fedired-js';
 import * as Reversi from 'misskey-reversi';
 import { i18n } from '@/i18n.js';
 import { signinRequired } from '@/account.js';

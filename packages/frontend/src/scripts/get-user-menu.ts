@@ -5,7 +5,7 @@
 
 import { toUnicode } from 'punycode';
 import { defineAsyncComponent, ref, watch } from 'vue';
-import * as Misskey from 'misskey-js';
+import * as Misskey from 'fedired-js';
 import { i18n } from '@/i18n.js';
 import { copyToClipboard } from '@/scripts/copy-to-clipboard.js';
 import { host, url } from '@@/js/config.js';

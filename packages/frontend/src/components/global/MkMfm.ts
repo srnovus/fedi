@@ -5,7 +5,7 @@
 
 import { VNode, h, SetupContext, provide } from 'vue';
 import * as mfm from 'mfm-js';
-import * as Misskey from 'misskey-js';
+import * as Misskey from 'fedired-js';
 import { host } from '@@/js/config.js';
 import MkUrl from '@/components/global/MkUrl.vue';
 import MkTime from '@/components/global/MkTime.vue';

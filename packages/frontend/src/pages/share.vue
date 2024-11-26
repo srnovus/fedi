@@ -33,7 +33,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 // SPECIFICATION: https://misskey-hub.net/docs/for-users/features/share-form/
 
 import { ref, computed } from 'vue';
-import * as Misskey from 'misskey-js';
+import * as Misskey from 'fedired-js';
 import MkButton from '@/components/MkButton.vue';
 import MkPostForm from '@/components/MkPostForm.vue';
 import * as os from '@/os.js';

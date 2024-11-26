@@ -45,7 +45,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 </template>
 
 <script setup lang="ts">
-import { entities } from 'misskey-js';
+import { entities } from 'fedired-js';
 import { computed, defineAsyncComponent, onMounted, ref } from 'vue';
 import XRecipient from './notification-recipient.item.vue';
 import XHeader from '@/pages/admin/_header_.vue';

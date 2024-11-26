@@ -12,7 +12,7 @@ import { ReversiGameEntityService } from '@/core/entities/ReversiGameEntityServi
 import { isJsonObject } from '@/misc/json-value.js';
 import type { JsonObject, JsonValue } from '@/misc/json-value.js';
 import Channel, { type MiChannelService } from '../channel.js';
-import { reversiUpdateKeys } from 'misskey-js';
+import { reversiUpdateKeys } from 'fedired-js';
 
 class ReversiGameChannel extends Channel {
 	public readonly chName = 'reversiGame';

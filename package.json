@@ -1,7 +1,7 @@
 {
-	"name": "misskey",
-	"version": "2024.11.1-alpha.0",
-	"codename": "nasubi",
+	"name": "fedired",
+	"version": "0.0.1-alpha.0",
+	"codename": "nvus",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/misskey-dev/misskey.git"
@@ -13,7 +13,7 @@
 		"packages/frontend-embed",
 		"packages/backend",
 		"packages/sw",
-		"packages/misskey-js",
+		"packages/fedired-js",
 		"packages/misskey-reversi",
 		"packages/misskey-bubble-game"
 	],
@@ -23,7 +23,7 @@
 		"build-assets": "node ./scripts/build-assets.mjs",
 		"build": "pnpm build-pre && pnpm -r build && pnpm build-assets",
 		"build-storybook": "pnpm --filter frontend build-storybook",
-		"build-misskey-js-with-types": "pnpm build-pre && pnpm --filter backend... --filter=!misskey-js build && pnpm --filter backend generate-api-json --no-build && ncp packages/backend/built/api.json packages/misskey-js/generator/api.json && pnpm --filter misskey-js update-autogen-code && pnpm --filter misskey-js build && pnpm --filter misskey-js api",
+		"build-fedired-js-with-types": "pnpm build-pre && pnpm --filter backend... --filter=!fedired-js build && pnpm --filter backend generate-api-json --no-build && ncp packages/backend/built/api.json packages/fedired-js/generator/api.json && pnpm --filter fedired-js update-autogen-code && pnpm --filter fedired-js build && pnpm --filter fedired-js api",
 		"start": "pnpm check:connect && cd packages/backend && node ./built/boot/entry.js",
 		"start:test": "cd packages/backend && cross-env NODE_ENV=test node ./built/boot/entry.js",
 		"init": "pnpm migrate",

@@ -4,7 +4,7 @@
  */
 
 import { onUnmounted, Ref, ShallowRef } from 'vue';
-import * as Misskey from 'misskey-js';
+import * as Misskey from 'fedired-js';
 import { useStream } from '@/stream.js';
 import { $i } from '@/account.js';
 

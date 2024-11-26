@@ -4,8 +4,8 @@
  */
 
 import { EventEmitter } from 'eventemitter3';
-import * as Misskey from 'misskey-js';
-import type { Channels, StreamEvents, IStream, IChannelConnection } from 'misskey-js';
+import * as Misskey from 'fedired-js';
+import type { Channels, StreamEvents, IStream, IChannelConnection } from 'fedired-js';
 
 type AnyOf<T extends Record<any, any>> = T[keyof T];
 type OmitFirst<T extends any[]> = T extends [any, ...infer R] ? R : never;

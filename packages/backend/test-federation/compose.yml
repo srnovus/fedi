@@ -11,7 +11,7 @@ services:
       bash -c "
         corepack enable && corepack prepare
         pnpm -F backend i
-        pnpm -F misskey-js i
+        pnpm -F fedired-js i
         pnpm -F misskey-reversi i
       "
 
@@ -47,12 +47,12 @@ services:
         target: /misskey/packages/backend/jest.config.fed.cjs
         read_only: true
       - type: bind
-        source: ../../misskey-js/built
-        target: /misskey/packages/misskey-js/built
+        source: ../../fedired-js/built
+        target: /misskey/packages/fedired-js/built
         read_only: true
       - type: bind
-        source: ../../misskey-js/package.json
-        target: /misskey/packages/misskey-js/package.json
+        source: ../../fedired-js/package.json
+        target: /misskey/packages/fedired-js/package.json
         read_only: true
       - type: bind
         source: ../../../package.json
@@ -74,7 +74,7 @@ services:
     entrypoint: >
       bash -c '
         corepack enable && corepack prepare
-        pnpm -F misskey-js i --frozen-lockfile
+        pnpm -F fedired-js i --frozen-lockfile
         pnpm -F backend i --frozen-lockfile
         exec "$0" "$@"
       '

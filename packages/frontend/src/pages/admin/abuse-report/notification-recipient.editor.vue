@@ -72,7 +72,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 
 <script lang="ts" setup>
 import { computed, onMounted, ref, shallowRef, toRefs } from 'vue';
-import { entities } from 'misskey-js';
+import { entities } from 'fedired-js';
 import MkButton from '@/components/MkButton.vue';
 import MkModalWindow from '@/components/MkModalWindow.vue';
 import { i18n } from '@/i18n.js';

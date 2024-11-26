@@ -18,7 +18,7 @@ import {
 	uploadFile,
 	waitFire,
 } from '../utils.js';
-import type * as misskey from 'misskey-js';
+import type * as misskey from 'fedired-js';
 
 describe('API', () => {
 	let alice: misskey.entities.SignupResponse;

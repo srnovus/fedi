@@ -5,7 +5,7 @@
 
 import { VNode, h, SetupContext, provide } from 'vue';
 import * as mfm from 'mfm-js';
-import * as Misskey from 'misskey-js';
+import * as Misskey from 'fedired-js';
 import { host } from '@@/js/config.js';
 import EmUrl from '@/components/EmUrl.vue';
 import EmTime from '@/components/EmTime.vue';

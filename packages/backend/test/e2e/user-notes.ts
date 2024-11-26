@@ -7,7 +7,7 @@ process.env.NODE_ENV = 'test';
 
 import * as assert from 'assert';
 import { api, post, signup, uploadUrl } from '../utils.js';
-import type * as misskey from 'misskey-js';
+import type * as misskey from 'fedired-js';
 
 describe('users/notes', () => {
 	let alice: misskey.entities.SignupResponse;

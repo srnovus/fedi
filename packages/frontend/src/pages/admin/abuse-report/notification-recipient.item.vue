@@ -29,7 +29,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 </template>
 
 <script setup lang="ts">
-import { entities } from 'misskey-js';
+import { entities } from 'fedired-js';
 import { computed, toRefs } from 'vue';
 import { i18n } from '@/i18n.js';
 

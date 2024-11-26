@@ -4,7 +4,7 @@
  */
 
 import { AISCRIPT_VERSION } from '@syuilo/aiscript';
-import type { entities } from 'misskey-js'
+import type { entities } from 'fedired-js'
 
 export function abuseUserReport() {
 	return {

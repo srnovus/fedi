@@ -299,9 +299,9 @@ importers:
       mime-types:
         specifier: 2.1.35
         version: 2.1.35
-      misskey-js:
+      fedired-js:
         specifier: workspace:*
-        version: link:../misskey-js
+        version: link:../fedired-js
       misskey-reversi:
         specifier: workspace:*
         version: link:../misskey-reversi
@@ -799,9 +799,9 @@ importers:
       misskey-bubble-game:
         specifier: workspace:*
         version: link:../misskey-bubble-game
-      misskey-js:
+      fedired-js:
         specifier: workspace:*
-        version: link:../misskey-js
+        version: link:../fedired-js
       misskey-reversi:
         specifier: workspace:*
         version: link:../misskey-reversi
@@ -1091,9 +1091,9 @@ importers:
       mfm-js:
         specifier: 0.24.0
         version: 0.24.0
-      misskey-js:
+      fedired-js:
         specifier: workspace:*
-        version: link:../misskey-js
+        version: link:../fedired-js
       punycode:
         specifier: 2.3.1
         version: 2.3.1
@@ -1218,9 +1218,9 @@ importers:
 
   packages/frontend-shared:
     dependencies:
-      misskey-js:
+      fedired-js:
         specifier: workspace:*
-        version: link:../misskey-js
+        version: link:../fedired-js
       vue:
         specifier: 3.5.12
         version: 3.5.12(typescript@5.6.3)
@@ -1290,7 +1290,7 @@ importers:
         specifier: 5.6.3
         version: 5.6.3
 
-  packages/misskey-js:
+  packages/fedired-js:
     dependencies:
       '@simplewebauthn/types':
         specifier: 11.0.0
@@ -1354,7 +1354,7 @@ importers:
         specifier: 5.6.3
         version: 5.6.3
 
-  packages/misskey-js/generator:
+  packages/fedired-js/generator:
     devDependencies:
       '@readme/openapi-parser':
         specifier: 2.6.0
@@ -1423,9 +1423,9 @@ importers:
       idb-keyval:
         specifier: 6.2.1
         version: 6.2.1
-      misskey-js:
+      fedired-js:
         specifier: workspace:*
-        version: link:../misskey-js
+        version: link:../fedired-js
     devDependencies:
       '@typescript-eslint/parser':
         specifier: 7.17.0

@@ -6,7 +6,7 @@
 import { action } from '@storybook/addon-actions';
 import { StoryObj } from '@storybook/vue3';
 import { http, HttpResponse } from 'msw';
-import * as Misskey from 'misskey-js';
+import * as Misskey from 'fedired-js';
 import MkDrive from './MkDrive.vue';
 import { file, folder } from '../../.storybook/fakes.js';
 import { commonHandlers } from '../../.storybook/mocks.js';

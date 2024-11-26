@@ -139,7 +139,7 @@
 		"mfm-js": "0.24.0",
 		"microformats-parser": "2.0.2",
 		"mime-types": "2.1.35",
-		"misskey-js": "workspace:*",
+		"fedired-js": "workspace:*",
 		"misskey-reversi": "workspace:*",
 		"ms": "3.0.0-canary.1",
 		"nanoid": "5.0.8",

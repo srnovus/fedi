@@ -1,8 +1,8 @@
 ---
 _lang_: "Español"
 headlineMisskey: "Red conectada por notas"
-introMisskey: "¡Bienvenido/a! Misskey es un servicio de microblogging descentralizado de código abierto.\nEscribe \"notas\" para compartir lo que te ocurre ahora o para contar sobre ti a todos 📡\nCon la función de \"reacciones\", puedes también añadir una reacción rápida a las notas de todos 👍\n¡Exploremos juntos un nuevo mundo! 🚀"
-poweredByMisskeyDescription: "{name} es uno de los servicios (también llamado instancia) que usa la plataforma de código abierto <b>Misskey</b>"
+introMisskey: "¡Bienvenido/a! Fedired es un servicio de microblogging descentralizado de código abierto.\nEscribe \"notas\" para compartir lo que te ocurre ahora o para contar sobre ti a todos 📡\nCon la función de \"reacciones\", puedes también añadir una reacción rápida a las notas de todos 👍\n¡Exploremos juntos un nuevo mundo! 🚀"
+poweredByMisskeyDescription: "{name} es uno de los servicios (también llamado instancia) que usa la plataforma de código abierto <b>Fedired</b>"
 monthAndDay: "{day}/{month}"
 search: "Buscar"
 notifications: "Notificaciones"
@@ -174,7 +174,7 @@ youCanCleanRemoteFilesCache: "Puedes vaciar la caché pulsando en el botón 🗑
 cacheRemoteSensitiveFiles: "Cachear archivos remotos sensibles"
 cacheRemoteSensitiveFilesDescription: "Cuando esta opción está desactivada, los archivos remotos sensibles son cargador directamente de la instancia origen sin ser cacheados."
 flagAsBot: "Esta cuenta es un bot"
-flagAsBotDescription: "En caso de que esta cuenta fuera usada por un programa, active esta opción. Al hacerlo, esta opción servirá para otros desarrolladores para evitar cadenas infinitas de reacciones, y ajustará los sistemas internos de Misskey para que trate a esta cuenta como un bot."
+flagAsBotDescription: "En caso de que esta cuenta fuera usada por un programa, active esta opción. Al hacerlo, esta opción servirá para otros desarrolladores para evitar cadenas infinitas de reacciones, y ajustará los sistemas internos de Fedired para que trate a esta cuenta como un bot."
 flagAsCat: "Esta cuenta es un gato"
 flagAsCatDescription: "En caso de que declare que esta cuenta es de un gato, active esta opción."
 flagShowTimelineReplies: "Mostrar respuestas a las notas en la biografía"
@@ -1187,7 +1187,7 @@ externalServices: "Servicios Externos"
 sourceCode: "Código fuente"
 sourceCodeIsNotYetProvided: "El código fuente aún no está disponible. Contacta con el administrador para solucionarlo."
 repositoryUrl: "URL del repositorio"
-repositoryUrlDescription: "Si estás usando Misskey tal cual (sin cambios en el código fuente), entra en https://github.com/misskey-dev/misskey"
+repositoryUrlDescription: "Si estás usando Fedired tal cual (sin cambios en el código fuente), entra en https://github.com/Fedired-dev/Fedired"
 repositoryUrlOrTarballRequired: "Si no has publicado un repositorio aún, deberás publicar un tarball en su lugar. Mira el archivo .config/example.yml para más información."
 feedback: "Comentarios"
 feedbackUrl: "URL de comentarios"
@@ -1298,7 +1298,7 @@ _initialAccountSetting:
   pushNotificationDescription: "Habilitar las notificaciones push te permitirá recibir notificaciones de {name} directamente en tu dispositivo."
   initialAccountSettingCompleted: "¡Configuración del perfil completada!"
   haveFun: "¡Disfruta de {name}!"
-  youCanContinueTutorial: "Puedes proceder a un tutorial sobre cómo usar {name} (Misskey) o puedes terminar la instalación aquí y empezar a usarlo ya mismo."
+  youCanContinueTutorial: "Puedes proceder a un tutorial sobre cómo usar {name} (Fedired) o puedes terminar la instalación aquí y empezar a usarlo ya mismo."
   startTutorial: "Comenzar tutorial"
   skipAreYouSure: "¿Realmente quieres saltarte la configuración del perfil?"
   laterAreYouSure: "¿Realmente quieres configurar tu perfil después?"
@@ -1309,10 +1309,10 @@ _initialTutorial:
   skipAreYouSure: "¿Salir del tutorial?"
   _landing:
     title: "Bienvenid@ al tutorial"
-    description: "Aquí podrás aprender las nociones básicas sobre cómo usar Misskey y sus funciones."
+    description: "Aquí podrás aprender las nociones básicas sobre cómo usar Fedired y sus funciones."
   _note:
     title: "¿Qué es una nota?"
-    description: "Las publicaciones en Misskey se llaman 'Notas'. Las notas se ordenan de forma cronológica en la línea de tiempo y se actualizan en tiempo real."
+    description: "Las publicaciones en Fedired se llaman 'Notas'. Las notas se ordenan de forma cronológica en la línea de tiempo y se actualizan en tiempo real."
     reply: "Pulsa en este botón para contestar a un mensaje. También es posible contestar a otras contestaciones, continuando así la conversación como un hilo."
     renote: "Puedes compartir esa nota en tu propia línea de tiempo. También puedes añadir una cita con tus comentarios."
     reaction: "Puedes añadir reacciones a la Nota. Se explicarán más detalles en la siguiente página."
@@ -1326,7 +1326,7 @@ _initialTutorial:
     reactDone: "Puedes deshacer una reacción pulsando en el botón '-'."
   _timeline:
     title: "El concepto de Línea de tiempo"
-    description1: "Misskey proporciona múltiples líneas de tiempo basadas en su uso (algunas pueden no estar disponibles dependiendo de las políticas de la instancia)."
+    description1: "Fedired proporciona múltiples líneas de tiempo basadas en su uso (algunas pueden no estar disponibles dependiendo de las políticas de la instancia)."
     home: "Puedes ver los posts de las cuentas que sigues."
     local: "Puedes ver los posts de todos los usuarios de este servidor."
     social: "Se ven los posts de la línea de tiempo de inicio junto con los de la línea de tiempo local."
@@ -1335,7 +1335,7 @@ _initialTutorial:
     description3: "Además, hay listas de líneas de tiempo y listas de canales. Para más detalle, por favor visita este enlace: {link}"
   _postNote:
     title: "Ajustes de publicación de nota"
-    description1: "Cuando publicas una nota en Misskey, hay varias opciones disponibles. El formulario tiene este aspecto."
+    description1: "Cuando publicas una nota en Fedired, hay varias opciones disponibles. El formulario tiene este aspecto."
     _visibility:
       description: "Puedes limitar quién puede ver tu nota."
       public: "Tu nota será visible para todos los usuarios."
@@ -1363,7 +1363,7 @@ _initialTutorial:
     doItToContinue: "Marca el archivo adjunto como sensible para continuar."
   _done:
     title: "¡Has completado el tutorial! 🎉"
-    description: "Las funciones que mostramos aquí son sólo una pequeña parte. Para más detalles sobre el funcionamiento de Misskey, pulsa en este enlace: {link}"
+    description: "Las funciones que mostramos aquí son sólo una pequeña parte. Para más detalles sobre el funcionamiento de Fedired, pulsa en este enlace: {link}"
 _timelineDescription:
   home: "En la línea de tiempo de Inicio puedes ver las notas de las cuentas a las que sigues."
   local: "En la línea de tiempo Local puedes ver las notas de todos los usuarios del servidor."
@@ -1402,9 +1402,9 @@ _achievements:
   earnedAt: "Desbloqueado el"
   _types:
     _notes1:
-      title: "¡Hola Misskey!"
+      title: "¡Hola Fedired!"
       description: "Publicaste tu primera nota"
-      flavor: "¡Pasándola bien con Misskey!"
+      flavor: "¡Pasándola bien con Fedired!"
     _notes10:
       title: "Algunas notas"
       description: "10 notas publicadas"
@@ -1500,7 +1500,7 @@ _achievements:
     _login1000:
       title: "Maestro III"
       description: "Días desde el inicio de sesión: 1000"
-      flavor: "¡Gracias por usar Misskey!"
+      flavor: "¡Gracias por usar Fedired!"
     _noteClipped1:
       title: "No puedo evitar clipearte..."
       description: "Hacer un clip por primera vez"
@@ -1560,18 +1560,18 @@ _achievements:
       title: "¡Te gustan los logros!"
       description: "Mirando tus logros por 3 minutos"
     _iLoveMisskey:
-      title: "¡AMO Misskey!"
-      description: "\"I ❤ #Misskey\" Publicado"
-      flavor: "El equipo de desarrollo de Misskey, en verdad, ¡aprecia tu apoyo!"
+      title: "¡AMO Fedired!"
+      description: "\"I ❤ #Fedired\" Publicado"
+      flavor: "El equipo de desarrollo de Fedired, en verdad, ¡aprecia tu apoyo!"
     _foundTreasure:
       title: "Búsqueda del tesoro"
       description: "Encontraste un tesoro"
     _client30min:
       title: "Un descansito"
-      description: "30 minutos dedicados a Misskey"
+      description: "30 minutos dedicados a Fedired"
     _client60min:
-      title: "Viendo mucho Misskey."
-      description: "Dejar abierto Misskey por al menos 60 minutos"
+      title: "Viendo mucho Fedired."
+      description: "Dejar abierto Fedired por al menos 60 minutos"
     _noteDeletedWithin1min:
       title: "Ah... Mejor no..."
       description: "Borrar una nota antes que de pase 1 minuto"
@@ -1636,12 +1636,12 @@ _achievements:
     _brainDiver:
       title: "Brain Diver"
       description: "Publicaste un vínculo a \"Brain Diver\""
-      flavor: "Misskey-Misskey La-Tu-Ma"
+      flavor: "Fedired-Fedired La-Tu-Ma"
     _smashTestNotificationButton:
       title: "Sobrecarga de pruebas"
       description: "Envía muchas notificaciones de prueba en un corto espacio de tiempo"
     _tutorialCompleted:
-      title: "Diploma del Curso Básico de Misskey"
+      title: "Diploma del Curso Básico de Fedired"
       description: "Tutorial completado"
     _bubbleGameExplodingHead:
       title: "🤯"
@@ -1816,14 +1816,14 @@ _registry:
   domain: "Dominio"
   createKey: "Crear una llave"
 _aboutMisskey:
-  about: "Misskey es un software de código abierto, desarrollado por syuilo desde el 2014"
+  about: "Plataforma social descentralizada impulsada por tecnología Fedired."
   contributors: "Principales colaboradores"
   allContributors: "Todos los colaboradores"
   source: "Código fuente"
   original: "Original"
-  thisIsModifiedVersion: "{name} usa una versión modificada de Misskey."
-  translation: "Traducir Misskey"
-  donate: "Donar a Misskey"
+  thisIsModifiedVersion: "{name} usa una versión modificada de Fedired."
+  translation: "Traducir Fedired"
+  donate: "Donar a Fedired"
   morePatrons: "Muchas más personas nos apoyan. Muchas gracias🥰"
   patrons: "Patrocinadores"
   projectMembers: "Miembros del proyecto"
@@ -1947,7 +1947,7 @@ _soundSettings:
   driveFileTypeWarn: "Este archivo es incompatible"
   driveFileTypeWarnDescription: "Selecciona un archivo de audio"
   driveFileDurationWarn: "La duración del audio es demasiado larga."
-  driveFileDurationWarnDescription: "Usar un audio de larga duración puede llegar a molestar mientras usas Misskey. ¿Quieres continuar?"
+  driveFileDurationWarnDescription: "Usar un audio de larga duración puede llegar a molestar mientras usas Fedired. ¿Quieres continuar?"
 _ago:
   future: "Futuro"
   justNow: "Justo ahora"

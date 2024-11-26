@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: AGPL-3.0-only
  */
 
-import * as Misskey from 'misskey-js';
+import * as Misskey from 'fedired-js';
 import { MaybeRefOrGetter, Ref, inject, isRef, onActivated, onBeforeUnmount, provide, ref, toValue, watch } from 'vue';
 
 export type PageMetadata = {

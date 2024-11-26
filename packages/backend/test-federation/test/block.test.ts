@@ -1,5 +1,5 @@
 import { deepStrictEqual, rejects, strictEqual } from 'node:assert';
-import * as Misskey from 'misskey-js';
+import * as Misskey from 'fedired-js';
 import { assertNotificationReceived, createAccount, type LoginUser, resolveRemoteNote, resolveRemoteUser, sleep } from './utils.js';
 
 describe('Block', () => {

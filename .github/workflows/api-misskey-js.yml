@@ -3,12 +3,12 @@ name: API report (misskey.js)
 on:
   push:
     paths:
-      - packages/misskey-js/**
-      - .github/workflows/api-misskey-js.yml
+      - packages/fedired-js/**
+      - .github/workflows/api-fedired-js.yml
   pull_request:
     paths:
-      - packages/misskey-js/**
-      - .github/workflows/api-misskey-js.yml
+      - packages/fedired-js/**
+      - .github/workflows/api-fedired-js.yml
 jobs:
   report:
 
@@ -30,14 +30,14 @@ jobs:
         run: pnpm i --frozen-lockfile
 
       - name: Build
-        run: pnpm --filter misskey-js build
+        run: pnpm --filter fedired-js build
 
       - name: Check files
-        run: ls packages/misskey-js/built
+        run: ls packages/fedired-js/built
 
       - name: API report
-        run: pnpm --filter misskey-js api-prod
+        run: pnpm --filter fedired-js api-prod
 
       - name: Show report
         if: always()
-        run: cat packages/misskey-js/temp/misskey-js.api.md
+        run: cat packages/fedired-js/temp/fedired-js.api.md

@@ -11,7 +11,7 @@
 	"dependencies": {
 		"esbuild": "0.24.0",
 		"idb-keyval": "6.2.1",
-		"misskey-js": "workspace:*"
+		"fedired-js": "workspace:*"
 	},
 	"devDependencies": {
 		"@typescript-eslint/parser": "7.17.0",

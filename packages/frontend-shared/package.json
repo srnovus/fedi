@@ -33,7 +33,7 @@
 		"js-built"
 	],
 	"dependencies": {
-		"misskey-js": "workspace:*",
+		"fedired-js": "workspace:*",
 		"vue": "3.5.12"
 	}
 }

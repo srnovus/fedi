@@ -7,7 +7,7 @@
 
 import { Component, markRaw, Ref, ref, defineAsyncComponent, nextTick } from 'vue';
 import { EventEmitter } from 'eventemitter3';
-import * as Misskey from 'misskey-js';
+import * as Misskey from 'fedired-js';
 import type { ComponentProps as CP } from 'vue-component-type-helpers';
 import type { Form, GetFormResultType } from '@/scripts/form.js';
 import type { MenuItem } from '@/types/menu.js';

@@ -23,7 +23,7 @@
 		"buraha": "0.0.1",
 		"estree-walker": "3.0.3",
 		"mfm-js": "0.24.0",
-		"misskey-js": "workspace:*",
+		"fedired-js": "workspace:*",
 		"frontend-shared": "workspace:*",
 		"punycode": "2.3.1",
 		"rollup": "4.26.0",

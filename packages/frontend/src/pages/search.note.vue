@@ -52,7 +52,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 
 <script lang="ts" setup>
 import { computed, ref, toRef, watch } from 'vue';
-import type { UserDetailed } from 'misskey-js/entities.js';
+import type { UserDetailed } from 'fedired-js/entities.js';
 import type { Paging } from '@/components/MkPagination.vue';
 import MkNotes from '@/components/MkNotes.vue';
 import MkInput from '@/components/MkInput.vue';

@@ -23,12 +23,12 @@
   - changed-files:
     - any-glob-to-any-file: ['packages/sw/**/*']
 
-'packages/misskey-js':
+'packages/fedired-js':
 - any:
   - changed-files:
-    - any-glob-to-any-file: ['packages/misskey-js/**/*']
+    - any-glob-to-any-file: ['packages/fedired-js/**/*']
 
-'packages/misskey-js:test':
+'packages/fedired-js:test':
 - any:
   - changed-files:
-    - any-glob-to-any-file: ['packages/misskey-js/test/**/*', 'packages/misskey-js/test-d/**/*']
+    - any-glob-to-any-file: ['packages/fedired-js/test/**/*', 'packages/fedired-js/test-d/**/*']

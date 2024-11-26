@@ -9,7 +9,7 @@ import * as assert from 'assert';
 import { WebSocket } from 'ws';
 import { MiFollowing } from '@/models/Following.js';
 import { api, createAppToken, initTestDb, port, post, signup, waitFire } from '../utils.js';
-import type * as misskey from 'misskey-js';
+import type * as misskey from 'fedired-js';
 
 describe('Streaming', () => {
 	let Followings: any;

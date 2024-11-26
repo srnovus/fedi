@@ -19,7 +19,7 @@ import type {
 	PublicKeyCredentialRequestOptionsJSON,
 	RegistrationResponseJSON,
 } from '@simplewebauthn/types';
-import type * as misskey from 'misskey-js';
+import type * as misskey from 'fedired-js';
 
 describe('2要素認証', () => {
 	let alice: misskey.entities.SignupResponse;

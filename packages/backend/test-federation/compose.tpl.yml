@@ -43,12 +43,12 @@ services:
         target: /misskey/packages/backend/package.json
         read_only: true
       - type: bind
-        source: ../../misskey-js/built
-        target: /misskey/packages/misskey-js/built
+        source: ../../fedired-js/built
+        target: /misskey/packages/fedired-js/built
         read_only: true
       - type: bind
-        source: ../../misskey-js/package.json
-        target: /misskey/packages/misskey-js/package.json
+        source: ../../fedired-js/package.json
+        target: /misskey/packages/fedired-js/package.json
         read_only: true
       - type: bind
         source: ../../misskey-reversi/built

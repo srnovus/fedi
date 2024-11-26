@@ -8,8 +8,8 @@ services:
         source: node_modules_backend
         target: /misskey/packages/backend/node_modules
       - type: volume
-        source: node_modules_misskey-js
-        target: /misskey/packages/misskey-js/node_modules
+        source: node_modules_fedired-js
+        target: /misskey/packages/fedired-js/node_modules
       - type: volume
         source: node_modules_misskey-reversi
         target: /misskey/packages/misskey-reversi/node_modules
@@ -27,8 +27,8 @@ services:
         source: node_modules_backend_dev
         target: /misskey/packages/backend/node_modules
       - type: volume
-        source: node_modules_misskey-js_dev
-        target: /misskey/packages/misskey-js/node_modules
+        source: node_modules_fedired-js_dev
+        target: /misskey/packages/fedired-js/node_modules
 
   daemon:
     networks:
@@ -64,8 +64,8 @@ services:
         source: node_modules_backend
         target: /misskey/packages/backend/node_modules
       - type: volume
-        source: node_modules_misskey-js
-        target: /misskey/packages/misskey-js/node_modules
+        source: node_modules_fedired-js
+        target: /misskey/packages/fedired-js/node_modules
       - type: volume
         source: node_modules_misskey-reversi
         target: /misskey/packages/misskey-reversi/node_modules
@@ -86,8 +86,8 @@ services:
         source: node_modules_backend
         target: /misskey/packages/backend/node_modules
       - type: volume
-        source: node_modules_misskey-js
-        target: /misskey/packages/misskey-js/node_modules
+        source: node_modules_fedired-js
+        target: /misskey/packages/fedired-js/node_modules
       - type: volume
         source: node_modules_misskey-reversi
         target: /misskey/packages/misskey-reversi/node_modules
@@ -112,6 +112,6 @@ volumes:
   node_modules_dev:
   node_modules_backend:
   node_modules_backend_dev:
-  node_modules_misskey-js:
-  node_modules_misskey-js_dev:
+  node_modules_fedired-js:
+  node_modules_fedired-js_dev:
   node_modules_misskey-reversi:

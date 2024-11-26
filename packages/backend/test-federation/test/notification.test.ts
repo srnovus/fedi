@@ -1,4 +1,4 @@
-import * as Misskey from 'misskey-js';
+import * as Misskey from 'fedired-js';
 import { assertNotificationReceived, createAccount, type LoginUser, resolveRemoteNote, resolveRemoteUser, sleep } from './utils.js';
 
 describe('Notification', () => {

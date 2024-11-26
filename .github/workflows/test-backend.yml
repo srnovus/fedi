@@ -8,13 +8,13 @@ on:
     paths:
       - packages/backend/**
       # for permissions
-      - packages/misskey-js/**
+      - packages/fedired-js/**
       - .github/workflows/test-backend.yml
   pull_request:
     paths:
       - packages/backend/**
       # for permissions
-      - packages/misskey-js/**
+      - packages/fedired-js/**
       - .github/workflows/test-backend.yml
 jobs:
   unit:

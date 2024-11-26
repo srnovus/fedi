@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: AGPL-3.0-only
  */
 
-import { permissions } from 'misskey-js';
+import { permissions } from 'fedired-js';
 import type { KeyOf, Schema } from '@/misc/json-schema.js';
 
 import * as ep___admin_abuseReport_notificationRecipient_list

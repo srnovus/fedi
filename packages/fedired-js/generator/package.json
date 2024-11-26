@@ -1,5 +1,5 @@
 {
-	"name": "misskey-js-type-generator",
+	"name": "fedired-js-type-generator",
 	"version": "0.0.0",
 	"description": "Misskey TypeGenerator",
 	"type": "module",

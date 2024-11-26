@@ -221,7 +221,7 @@ MK_DEV_PREFER=backend pnpm dev
 You can run non-backend tests by executing following commands:
 ```sh
 pnpm --filter frontend test
-pnpm --filter misskey-js test
+pnpm --filter fedired-js test
 ```
 
 Backend tests require manual preparation of servers. See the next section for more on this.
@@ -310,7 +310,7 @@ Misskey uses [Storybook](https://storybook.js.org/) for UI development.
 #### Setup
 
 ```bash
-pnpm --filter misskey-js build
+pnpm --filter fedired-js build
 ```
 
 #### Run
