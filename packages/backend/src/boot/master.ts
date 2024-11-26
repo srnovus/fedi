@@ -31,24 +31,26 @@ const themeColor = chalk.hex('#86b300');
 
 function greet() {
 	if (!envOption.quiet) {
-		//#region Misskey logo
-		const v = `v${meta.version}`;
-		console.log(themeColor('  _____ _         _           '));
-		console.log(themeColor(' |     |_|___ ___| |_ ___ _ _ '));
-		console.log(themeColor(' | | | | |_ -|_ -| \'_| -_| | |'));
-		console.log(themeColor(' |_|_|_|_|___|___|_,_|___|_  |'));
-		console.log(' ' + chalk.gray(v) + themeColor('                        |___|\n'.substring(v.length)));
-		//#endregion
+//#region Fedired logo
+const v = `v${meta.version}`;
+console.log(themeColor('  FFFFF  EEEEE  DDDDD   III  RRRRR  EEEEE  DDDDD  '));
+console.log(themeColor('  F      E      D    D   I   R    R E      D    D '));
+console.log(themeColor('  FFFF   EEEE   D    D   I   RRRRR  EEEE   D    D '));
+console.log(themeColor('  F      E      D    D   I   R   R  E      D    D '));
+console.log(themeColor('  F      EEEEE  DDDDD   III  R    R EEEEE  DDDDD  '));
+console.log(' ' + chalk.gray(v) + themeColor('                       \n'.substring(v.length)));
+//#endregion
 
-		console.log(' Misskey is an open-source decentralized microblogging platform.');
-		console.log(chalk.rgb(255, 136, 0)(' If you like Misskey, please donate to support development. https://www.patreon.com/syuilo'));
+
+		console.log(' Decentralized social platform powered by Fedired technology.');
+		console.log(chalk.rgb(255, 136, 0)(' If you like Fedired, please donate to support development. https://www.patreon.com/fedired'));
 
 		console.log('');
 		console.log(chalkTemplate`--- ${os.hostname()} {gray (PID: ${process.pid.toString()})} ---`);
 	}
 
-	bootLogger.info('Welcome to Misskey!');
-	bootLogger.info(`Misskey v${meta.version}`, null, true);
+	bootLogger.info('Welcome to Fedired!');
+	bootLogger.info(`Fedired v${meta.version}`, null, true);
 }
 
 /**
@@ -71,7 +73,7 @@ export async function masterMain() {
 		process.exit(1);
 	}
 
-	bootLogger.succ('Misskey initialized');
+	bootLogger.succ('Fedired initialized');
 
 	if (config.sentryForBackend) {
 		Sentry.init({

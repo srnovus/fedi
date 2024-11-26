@@ -1,5 +1,5 @@
 /*
- * SPDX-FileCopyrightText: syuilo and misskey-project
+ * SPDX-FileCopyrightText: syuilo and Misskey-project
  * SPDX-License-Identifier: AGPL-3.0-only
  */
 
@@ -547,18 +547,18 @@ const extension_context_definition = {
 	schema: 'http://schema.org#',
 	PropertyValue: 'schema:PropertyValue',
 	value: 'schema:value',
-	// Misskey
-	misskey: 'https://misskey-hub.net/ns#',
-	'_misskey_content': 'misskey:_misskey_content',
-	'_misskey_quote': 'misskey:_misskey_quote',
-	'_misskey_reaction': 'misskey:_misskey_reaction',
-	'_misskey_votes': 'misskey:_misskey_votes',
-	'_misskey_summary': 'misskey:_misskey_summary',
-	'_misskey_followedMessage': 'misskey:_misskey_followedMessage',
-	'_misskey_requireSigninToViewContents': 'misskey:_misskey_requireSigninToViewContents',
-	'_misskey_makeNotesFollowersOnlyBefore': 'misskey:_misskey_makeNotesFollowersOnlyBefore',
-	'_misskey_makeNotesHiddenBefore': 'misskey:_misskey_makeNotesHiddenBefore',
-	'isCat': 'misskey:isCat',
+	// Fedired
+	fedired: 'https://sushell.com/ns#',
+	'_fedired_content': 'fedired:_fedired_content',
+	'_fedired_quote': 'fedired:_fedired_quote',
+	'_fedired_reaction': 'fedired:_fedired_reaction',
+	'_fedired_votes': 'fedired:_fedired_votes',
+	'_fedired_summary': 'fedired:_fedired_summary',
+	'_fedired_followedMessage': 'fedired:_fedired_followedMessage',
+	'_fedired_requireSigninToViewContents': 'fedired:_fedired_requireSigninToViewContents',
+	'_fedired_makeNotesFollowersOnlyBefore': 'fedired:_fedired_makeNotesFollowersOnlyBefore',
+	'_fedired_makeNotesHiddenBefore': 'fedired:_fedired_makeNotesHiddenBefore',
+	'isCat': 'fedired:isCat',
 	// vcard
 	vcard: 'http://www.w3.org/2006/vcard/ns#',
 } satisfies Context;
