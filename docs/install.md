@@ -151,7 +151,7 @@ pnpm run init
 sudo nano /etc/systemd/system/fedired.service
 ```
 
-```sh
+```yml
 [Unit]
 Description=Misskey daemon
 
