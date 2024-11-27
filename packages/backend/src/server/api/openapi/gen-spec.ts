@@ -14,12 +14,12 @@ export function genOpenapiSpec(config: Config, includeSelfRef = false) {
 
 		info: {
 			version: config.version,
-			title: 'Misskey API',
+			title: 'Fedired API',
 		},
 
 		externalDocs: {
 			description: 'Repository',
-			url: 'https://github.com/misskey-dev/misskey',
+			url: 'https://github.com/fedired-dev/fedired',
 		},
 
 		servers: [{
@@ -60,7 +60,7 @@ export function genOpenapiSpec(config: Config, includeSelfRef = false) {
 		let desc = (endpoint.meta.description ? endpoint.meta.description : 'No description provided.') + '\n\n';
 
 		if (endpoint.meta.secure) {
-			desc += '**Internal Endpoint**: This endpoint is an API for the misskey mainframe and is not intended for use by third parties.\n';
+			desc += '**Internal Endpoint**: This endpoint is an API for the fedired mainframe and is not intended for use by third parties.\n';
 		}
 
 		desc += `**Credential required**: *${endpoint.meta.requireCredential ? 'Yes' : 'No'}*`;
@@ -97,7 +97,7 @@ export function genOpenapiSpec(config: Config, includeSelfRef = false) {
 			description: desc,
 			externalDocs: {
 				description: 'Source code',
-				url: `https://github.com/misskey-dev/misskey/blob/develop/packages/backend/src/server/api/endpoints/${endpoint.name}.ts`,
+				url: `https://github.com/fedired-dev/fedired/blob/develop/packages/backend/src/server/api/endpoints/${endpoint.name}.ts`,
 			},
 			...(endpoint.meta.tags ? {
 				tags: [endpoint.meta.tags[0]],

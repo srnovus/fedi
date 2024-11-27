@@ -64,7 +64,7 @@ export class ApiCallService implements OnApplicationShutdown {
 	#sendApiError(reply: FastifyReply, err: ApiError): void {
 		let statusCode = err.httpStatusCode;
 		if (err.httpStatusCode === 401) {
-			reply.header('WWW-Authenticate', 'Bearer realm="Misskey"');
+			reply.header('WWW-Authenticate', 'Bearer realm="Fedired"');
 		} else if (err.code === 'RATE_LIMIT_EXCEEDED') {
 			const info: unknown = err.info;
 			const unixEpochInSeconds = Date.now();
@@ -76,12 +76,12 @@ export class ApiCallService implements OnApplicationShutdown {
 				this.logger.warn(`rate limit information has unexpected type ${typeof(err.info?.reset)}`);
 			}
 		} else if (err.kind === 'client') {
-			reply.header('WWW-Authenticate', `Bearer realm="Misskey", error="invalid_request", error_description="${err.message}"`);
+			reply.header('WWW-Authenticate', `Bearer realm="Fedired", error="invalid_request", error_description="${err.message}"`);
 			statusCode = statusCode ?? 400;
 		} else if (err.kind === 'permission') {
 			// (ROLE_PERMISSION_DENIEDは関係ない)
 			if (err.code === 'PERMISSION_DENIED') {
-				reply.header('WWW-Authenticate', `Bearer realm="Misskey", error="insufficient_scope", error_description="${err.message}"`);
+				reply.header('WWW-Authenticate', `Bearer realm="Fedired", error="insufficient_scope", error_description="${err.message}"`);
 			}
 			statusCode = statusCode ?? 403;
 		} else if (!statusCode) {
@@ -93,7 +93,7 @@ export class ApiCallService implements OnApplicationShutdown {
 	#sendAuthenticationError(reply: FastifyReply, err: unknown): void {
 		if (err instanceof AuthenticationError) {
 			const message = 'Authentication failed. Please ensure your token is correct.';
-			reply.header('WWW-Authenticate', `Bearer realm="Misskey", error="invalid_token", error_description="${message}"`);
+			reply.header('WWW-Authenticate', `Bearer realm="Fedired", error="invalid_token", error_description="${message}"`);
 			this.send(reply, 401, new ApiError({
 				message: 'Authentication failed. Please ensure your token is correct.',
 				code: 'AUTHENTICATION_FAILED',

@@ -359,7 +359,7 @@ export class OAuth2ProviderService {
 			scopes_supported: kinds,
 			response_types_supported: ['code'],
 			grant_types_supported: ['authorization_code'],
-			service_documentation: 'https://misskey-hub.net',
+			service_documentation: 'https://sushell.com',
 			code_challenge_methods_supported: ['S256'],
 			authorization_response_iss_parameter_supported: true,
 		};

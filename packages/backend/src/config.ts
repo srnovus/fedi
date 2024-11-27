@@ -284,7 +284,7 @@ export function loadConfig(): Config {
 		videoThumbnailGenerator: config.videoThumbnailGenerator ?
 			config.videoThumbnailGenerator.endsWith('/') ? config.videoThumbnailGenerator.substring(0, config.videoThumbnailGenerator.length - 1) : config.videoThumbnailGenerator
 			: null,
-		userAgent: `Misskey/${version} (${config.url})`,
+		userAgent: `Fedired/${version} (${config.url})`,
 		frontendEntry: frontendManifest['src/_boot_.ts'],
 		frontendManifestExists: frontendManifestExists,
 		frontendEmbedEntry: frontendEmbedManifest['src/boot.ts'],
