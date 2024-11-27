@@ -25,7 +25,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 					{{ i18n.ts._aboutMisskey.about }}<br><a href="https://misskey-hub.net/docs/about-misskey/" target="_blank" class="_link">{{ i18n.ts.learnMore }}</a>
 				</div>
 				<div v-if="$i != null" style="text-align: center;">
-					<MkButton primary rounded inline @click="iLoveMisskey">I <Mfm text="$[jelly ❤]"/> #Fedired</MkButton>
+					<MkButton primary rounded inline @click="iLoveFedired">I <Mfm text="$[jelly ❤]"/> #Fedired</MkButton>
 				</div>
 				<FormSection>
 					<div class="_gaps_s">
@@ -161,7 +161,7 @@ function gravity() {
 	easterEggEngine.value = physics(containerEl.value);
 }
 
-function iLoveMisskey() {
+function iLoveFedired() {
 	os.post({
 		initialText: 'I $[jelly ❤] #Misskey',
 		instant: true,

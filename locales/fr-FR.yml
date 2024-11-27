@@ -1548,7 +1548,7 @@ _achievements:
     _followers1000:
       title: "Influenceur·euse"
       description: "Obtenir plus de 1000 abonné·e·s"
-    _iLoveMisskey:
+    _iLoveFedired:
       title: "J’adore Misskey"
       description: "Publication « J’❤ #Misskey »"
       flavor: "L'équipe de développement de Misskey apprécie vraiment votre aide !"

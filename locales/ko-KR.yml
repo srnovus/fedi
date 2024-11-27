@@ -1636,7 +1636,7 @@ _achievements:
     _viewAchievements3min:
       title: "저 도전과제 좋아해요"
       description: "도전 과제 목록을 3분 이상 쳐다봤습니다"
-    _iLoveMisskey:
+    _iLoveFedired:
       title: "I Love Misskey"
       description: "\"I ❤ #Misskey\"를 포스트했습니다"
       flavor: "Misskey를 이용해 주셔서 감사합니다! ― 개발 팀"

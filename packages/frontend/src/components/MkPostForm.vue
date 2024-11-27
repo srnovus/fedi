@@ -845,7 +845,7 @@ async function post(ev?: MouseEvent) {
 			const text = postData.text ?? '';
 			const lowerCase = text.toLowerCase();
 			if ((lowerCase.includes('love') || lowerCase.includes('❤')) && lowerCase.includes('misskey')) {
-				claimAchievement('iLoveMisskey');
+				claimAchievement('iLoveFedired');
 			}
 			if ([
 				'https://youtu.be/Efrlqw8ytg4',

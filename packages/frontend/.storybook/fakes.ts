@@ -15,15 +15,15 @@ export function abuseUserReport() {
 		reporterId: 'reporterid',
 		targetUserId: 'targetuserid',
 		assigneeId: 'assigneeid',
-		reporter: userDetailed('reporterid', 'reporter', 'misskey-hub.net', 'Reporter'),
-		targetUser: userDetailed('targetuserid', 'target', 'misskey-hub.net', 'Target'),
-		assignee: userDetailed('assigneeid', 'assignee', 'misskey-hub.net', 'Assignee'),
+		reporter: userDetailed('reporterid', 'reporter', 'fedired-hub.net', 'Reporter'),
+		targetUser: userDetailed('targetuserid', 'target', 'fedired-hub.net', 'Target'),
+		assignee: userDetailed('assigneeid', 'assignee', 'fedired-hub.net', 'Assignee'),
 		me: null,
 		forwarded: false,
 	};
 }
 
-export function channel(id = 'somechannelid', name = 'Some Channel', bannerUrl: string | null = 'https://github.com/misskey-dev/misskey/blob/master/packages/frontend/assets/fedi.jpg?raw=true'): entities.Channel {
+export function channel(id = 'somechannelid', name = 'Some Channel', bannerUrl: string | null = 'https://github.com/fedired-dev/fedired/blob/master/packages/frontend/assets/fedi.jpg?raw=true'): entities.Channel {
 	return {
 		id,
 		createdAt: '2016-12-28T22:49:51.000Z',
@@ -105,8 +105,8 @@ export function file(isSensitive = false) {
 			width: 1024,
 			height: 270
 		},
-		url: 'https://github.com/misskey-dev/misskey/blob/master/packages/frontend/assets/fedi.jpg?raw=true',
-		thumbnailUrl: 'https://github.com/misskey-dev/misskey/blob/master/packages/frontend/assets/fedi.jpg?raw=true',
+		url: 'https://github.com/fedired-dev/fedired/blob/nvus/packages/frontend/assets/fedi.jpg?raw=true',
+		thumbnailUrl: 'https://github.com/fedired-dev/fedired/blob/nvus/packages/frontend/assets/fedi.jpg?raw=true',
 		comment: null,
 		folderId: null,
 		folder: null,
@@ -162,7 +162,7 @@ export function federationInstance(): entities.FederationInstance {
 	return {
 		id: 'someinstanceid',
 		firstRetrievedAt: '2021-01-01T00:00:00.000Z',
-		host: 'misskey-hub.net',
+		host: 'sushell.com',
 		usersCount: 10,
 		notesCount: 20,
 		followingCount: 5,
@@ -171,15 +171,15 @@ export function federationInstance(): entities.FederationInstance {
 		isSuspended: false,
 		suspensionState: 'none',
 		isBlocked: false,
-		softwareName: 'misskey',
+		softwareName: 'fedired',
 		softwareVersion: '2024.5.0',
 		openRegistrations: false,
-		name: 'Misskey Hub',
+		name: 'Fedired Social',
 		description: '',
 		maintainerName: '',
 		maintainerEmail: '',
 		isSilenced: false,
-		iconUrl: 'https://github.com/misskey-dev/misskey/blob/master/packages/frontend/assets/about-icon.png?raw=true',
+		iconUrl: 'https://github.com/fedired-dev/fedired/blob/nvus/packages/frontend/assets/about-icon.png?raw=true',
 		faviconUrl: '',
 		themeColor: '',
 		infoUpdatedAt: '',
@@ -207,25 +207,25 @@ export function note(id = 'somenoteid'): entities.Note {
 	};
 }
 
-export function userLite(id = 'someuserid', username = 'miskist', host: entities.UserDetailed['host'] = 'misskey-hub.net', name: entities.UserDetailed['name'] = 'Misskey User'): entities.UserLite {
+export function userLite(id = 'someuserid', username = 'miskist', host: entities.UserDetailed['host'] = 'fedired-hub.net', name: entities.UserDetailed['name'] = 'fedired User'): entities.UserLite {
 	return {
 		id,
 		username,
 		host,
 		name,
 		onlineStatus: 'unknown',
-		avatarUrl: 'https://github.com/misskey-dev/misskey/blob/master/packages/frontend/assets/about-icon.png?raw=true',
+		avatarUrl: 'https://github.com/fedired-dev/fedired/blob/master/packages/frontend/assets/about-icon.png?raw=true',
 		avatarBlurhash: 'eQFRshof5NWBRi},juayfPju53WB?0ofs;s*a{ofjuay^SoMEJR%ay',
 		avatarDecorations: [],
 		emojis: {},
 	};
 }
 
-export function userDetailed(id = 'someuserid', username = 'miskist', host: entities.UserDetailed['host'] = 'misskey-hub.net', name: entities.UserDetailed['name'] = 'Misskey User'): entities.UserDetailed {
+export function userDetailed(id = 'someuserid', username = 'miskist', host: entities.UserDetailed['host'] = 'fedired-hub.net', name: entities.UserDetailed['name'] = 'fedired User'): entities.UserDetailed {
 	return {
 		...userLite(id, username, host, name),
 		bannerBlurhash: 'eQA^IW^-MH8w9tE8I=S^o{$*R4RikXtSxutRozjEnNR.RQadoyozog',
-		bannerUrl: 'https://github.com/misskey-dev/misskey/blob/master/packages/frontend/assets/fedi.jpg?raw=true',
+		bannerUrl: 'https://github.com/fedired-dev/fedired/blob/nvus/packages/frontend/assets/fedi.jpg?raw=true',
 		birthday: '2014-06-20',
 		createdAt: '2016-12-28T22:49:51.000Z',
 		description: 'I am a cool user!',
@@ -235,7 +235,7 @@ export function userDetailed(id = 'someuserid', username = 'miskist', host: enti
 		fields: [
 			{
 				name: 'Website',
-				value: 'https://misskey-hub.net',
+				value: 'https://sushell.com',
 			},
 		],
 		verifiedLinks: [],

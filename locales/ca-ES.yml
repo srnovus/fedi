@@ -1636,7 +1636,7 @@ _achievements:
     _viewAchievements3min:
       title: "M'agraden els èxits "
       description: "Mira la teva llista d'assoliments durant més de 3 minuts"
-    _iLoveMisskey:
+    _iLoveFedired:
       title: "Estimo Misskey"
       description: "Publica \"I ❤ #Misskey\""
       flavor: "L'equip de desenvolupament de Misskey agraeix el vostre suport!"

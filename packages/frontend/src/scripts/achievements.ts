@@ -62,7 +62,7 @@ export const ACHIEVEMENT_TYPES = [
 	'followers1000',
 	'collectAchievements30',
 	'viewAchievements3min',
-	'iLoveMisskey',
+	'iLoveFedired',
 	'foundTreasure',
 	'client30min',
 	'client60min',
@@ -338,7 +338,7 @@ export const ACHIEVEMENT_BADGES = {
 		bg: 'linear-gradient(0deg, rgb(144 224 255), rgb(255 168 252))',
 		frame: 'bronze',
 	},
-	'iLoveMisskey': {
+	'iLoveFedired': {
 		img: '/fluent-emoji/2764.png',
 		bg: 'linear-gradient(0deg, rgb(255 77 77), rgb(247 155 214))',
 		frame: 'silver',

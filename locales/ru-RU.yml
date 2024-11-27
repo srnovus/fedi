@@ -1376,7 +1376,7 @@ _achievements:
     _viewAchievements3min:
       title: "Любовь к успехам"
       description: "Более 3 минут любования достижениями"
-    _iLoveMisskey:
+    _iLoveFedired:
       title: "Я люблю Misskey"
       description: "Написана заметка «I ❤ #Misskey»"
       flavor: "Спасибо за поддержку Misskey! Ваша команда разработчиков"

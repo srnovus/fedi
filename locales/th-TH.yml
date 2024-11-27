@@ -1613,7 +1613,7 @@ _achievements:
     _viewAchievements3min:
       title: "ชอบบรรลุความสําเร็จ"
       description: "มองดูรายการความสำเร็จเป็นเวลานานกว่า 3 นาที"
-    _iLoveMisskey:
+    _iLoveFedired:
       title: "ฉันรัก Misskey"
       description: "โพสต์ “I ❤ #Misskey”"
       flavor: "ขอบคุณพระคุณเป็นอย่างสูงที่ท่านใช้ Misskey นะคะ ! by ทีมผู้พัฒนา"

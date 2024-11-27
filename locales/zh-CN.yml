@@ -1636,7 +1636,7 @@ _achievements:
     _viewAchievements3min:
       title: "成就爱好者"
       description: "盯着成就看三分钟"
-    _iLoveMisskey:
+    _iLoveFedired:
       title: "I Love Misskey"
       description: "发布 \"I ❤ #Misskey\" 帖子"
       flavor: "感谢您使用 Misskey ！ by 开发团队"

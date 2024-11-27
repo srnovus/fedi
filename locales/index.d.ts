@@ -6421,7 +6421,7 @@ export interface Locale extends ILocale {
                  */
                 "description": string;
             };
-            "_iLoveMisskey": {
+            "_iLoveFedired": {
                 /**
                  * I Love Misskey
                  */

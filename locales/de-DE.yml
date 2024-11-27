@@ -1558,7 +1558,7 @@ _achievements:
     _viewAchievements3min:
       title: "Fan von Errungenschaften"
       description: "Schau dir die Liste deiner Errungenschaften für mindestens 3 Minuten an"
-    _iLoveMisskey:
+    _iLoveFedired:
       title: "I Love Misskey"
       description: "Sende \"I ❤ #Misskey\""
       flavor: "Danke, dass du Misskey verwendest! - vom Entwicklerteam"

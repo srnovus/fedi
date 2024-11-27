@@ -1613,7 +1613,7 @@ _achievements:
     _viewAchievements3min:
       title: "実績好き"
       description: "実績一覧を3分以上眺め続けた"
-    _iLoveMisskey:
+    _iLoveFedired:
       title: "Misskey好きやねん"
       description: "\"I ❤ #Misskey\"を投稿した"
       flavor: "Misskeyを使ってくれておおきにな～　by 開発チーム"

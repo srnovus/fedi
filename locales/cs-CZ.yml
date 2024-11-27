@@ -1292,7 +1292,7 @@ _achievements:
     _viewAchievements3min:
       title: "Máš rád úspěchy"
       description: "Koukejte na váš seznam úspěchů alespoň po dobu 3 minut"
-    _iLoveMisskey:
+    _iLoveFedired:
       title: "Miluju Misskey"
       description: "Zveřejněte \" I ❤ #Misskey\""
       flavor: "Vývojový tým Misskey si velmi váží vaší podpory!"

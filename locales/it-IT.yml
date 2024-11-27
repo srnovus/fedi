@@ -1631,7 +1631,7 @@ _achievements:
     _viewAchievements3min:
       title: "Mi piacciono i risultati"
       description: "Guarda la tua collezione di obiettivi per almeno 3 minuti"
-    _iLoveMisskey:
+    _iLoveFedired:
       title: "I LOVE Misskey"
       description: "Pubblica «I ♥ #Misskey»"
       flavor: "Grazie per aver utilizzato Misskey! Dal team di sviluppo"

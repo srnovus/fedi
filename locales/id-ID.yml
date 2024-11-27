@@ -1574,7 +1574,7 @@ _achievements:
     _viewAchievements3min:
       title: "Suka Pencapaian"
       description: "Lugat daftar pencapaianmu setidaknya 3 menit"
-    _iLoveMisskey:
+    _iLoveFedired:
       title: "I Love Misskey"
       description: "Catat \"I ❤ #Misskey\""
       flavor: "Tim pengembang misskey sangat mengapresiasi dukungan kamu!"

@@ -1283,7 +1283,7 @@ _achievements:
     _viewAchievements3min:
       title: "Yêu Thành tích"
       description: "Ngắm danh sách thành tích đến tận hơn 3 phút"
-    _iLoveMisskey:
+    _iLoveFedired:
       title: "Tôi Yêu Misskey"
       description: "Đăng lời nói \"I ❤ #Misskey\""
       flavor: "Xin chân thành cảm ơn bạn đã sử dụng Misskey!!  by Đội ngũ phát triển"

@@ -1633,7 +1633,7 @@ _achievements:
     _viewAchievements3min:
       title: "Likes Achievements"
       description: "Look at your list of achievements for at least 3 minutes"
-    _iLoveMisskey:
+    _iLoveFedired:
       title: "I Love Misskey"
       description: "Post \"I ❤ #Misskey\""
       flavor: "Misskey's development team greatly appreciates your support!"

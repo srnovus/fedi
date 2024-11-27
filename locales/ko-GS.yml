@@ -709,7 +709,7 @@ _achievements:
       description: "첫 노트럴 질겨찾기에 담앗어예"
     _myNoteFavorited1:
       description: "다런 사람이 내 노트럴 질겨찾기에 담앗십니다"
-    _iLoveMisskey:
+    _iLoveFedired:
       description: "“I ❤ #Misskey”럴 섰어예"
     _postedAt0min0sec:
       description: "0분 0초에 노트를 섰어예"

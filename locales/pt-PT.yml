@@ -1571,7 +1571,7 @@ _achievements:
     _viewAchievements3min:
       title: "Curte Conquistas"
       description: "Olhe para a sua lista de conquistas por pelo menos 3 minutos"
-    _iLoveMisskey:
+    _iLoveFedired:
       title: "Eu Amo Misskey"
       description: "Poste \"I ❤ #Misskey\""
       flavor: "A equipe de desenvolvimento do Misskey aprecia profundamente o seu apoio!"

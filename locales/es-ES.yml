@@ -1559,7 +1559,7 @@ _achievements:
     _viewAchievements3min:
       title: "¡Te gustan los logros!"
       description: "Mirando tus logros por 3 minutos"
-    _iLoveMisskey:
+    _iLoveFedired:
       title: "¡AMO Fedired!"
       description: "\"I ❤ #Fedired\" Publicado"
       flavor: "El equipo de desarrollo de Fedired, en verdad, ¡aprecia tu apoyo!"

@@ -1069,7 +1069,7 @@ _achievements:
     _viewAchievements3min:
       title: "Шанувальник досягнень"
       description: "Переглядати список досягнень принаймні 3 хвилини"
-    _iLoveMisskey:
+    _iLoveFedired:
       title: "I Love Misskey"
       description: "Відправлено \"I ❤ #Misskey\""
       flavor: "Дякуємо вам, що користуєтесь Misskey!  – команда розробників"
