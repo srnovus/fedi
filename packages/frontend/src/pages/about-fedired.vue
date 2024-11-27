@@ -166,7 +166,7 @@ function gravity() {
 
 function iLoveFedired() {
 	os.post({
-		initialText: 'I $[jelly ❤] #Misskey',
+		initialText: 'I $[jelly ❤] #Fedired',
 		instant: true,
 	});
 }

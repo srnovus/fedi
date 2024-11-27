@@ -9,11 +9,11 @@ html(class='embed')
 
 	head
 		meta(charset='utf-8')
-		meta(name='application-name' content='Misskey')
+		meta(name='application-name' content='Fedired')
 		meta(name='referrer' content='origin')
 		meta(name='theme-color' content= themeColor || '#86b300')
 		meta(name='theme-color-orig' content= themeColor || '#86b300')
-		meta(property='og:site_name' content= instanceName || 'Misskey')
+		meta(property='og:site_name' content= instanceName || 'Fedired')
 		meta(property='instance_url' content= instanceUrl)
 		meta(name='viewport' content='width=device-width, initial-scale=1')
 		meta(name='format-detection' content='telephone=no,date=no,address=no,email=no,url=no')
@@ -30,7 +30,7 @@ html(class='embed')
 
 		title
 			block title
-				= title || 'Misskey'
+				= title || 'Fedired'
 
 		block meta
 			meta(name='robots' content='noindex')
@@ -42,10 +42,10 @@ html(class='embed')
 			var VERSION = "#{version}";
 			var CLIENT_ENTRY = "#{entry.file}";
 
-		script(type='application/json' id='misskey_meta' data-generated-at=now)
+		script(type='application/json' id='fedired_meta' data-generated-at=now)
 			!= metaJson
 
-		script(type='application/json' id='misskey_embedCtx' data-generated-at=now)
+		script(type='application/json' id='fedired_embedCtx' data-generated-at=now)
 			!= embedCtx
 
 		script

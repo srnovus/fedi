@@ -29,7 +29,7 @@ export const Default = {
 	},
 	args: {
 		name: 'mi',
-		url: 'https://github.com/misskey-dev/misskey/blob/master/packages/frontend/assets/about-icon.png?raw=true',
+		url: 'https://github.com/fedired-dev/fedired/blob/nvus/packages/frontend/assets/about-icon.png?raw=true',
 	},
 	parameters: {
 		layout: 'centered',

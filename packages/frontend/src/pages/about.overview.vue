@@ -22,16 +22,16 @@ SPDX-License-Identifier: AGPL-3.0-only
 	<FormSection>
 		<div class="_gaps_m">
 			<MkKeyValue :copy="version">
-				<template #key>Misskey</template>
+				<template #key>Fedired</template>
 				<template #value>{{ version }}</template>
 			</MkKeyValue>
 			<div v-html="i18n.tsx.poweredByMisskeyDescription({ name: instance.name ?? host })">
 			</div>
-			<FormLink to="/about-misskey">
+			<FormLink to="/about-fedired">
 				<template #icon><i class="ti ti-info-circle"></i></template>
 				{{ i18n.ts.aboutMisskey }}
 			</FormLink>
-			<FormLink v-if="instance.repositoryUrl || instance.providesTarball" :to="instance.repositoryUrl || `/tarball/misskey-${version}.tar.gz`" external>
+			<FormLink v-if="instance.repositoryUrl || instance.providesTarball" :to="instance.repositoryUrl || `/tarball/fedired-${version}.tar.gz`" external>
 				<template #icon><i class="ti ti-code"></i></template>
 				{{ i18n.ts.sourceCode }}
 			</FormLink>
