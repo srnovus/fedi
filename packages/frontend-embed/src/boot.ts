@@ -25,7 +25,7 @@ import { i18n } from '@/i18n.js';
 
 import type { Theme } from '@/theme.js';
 
-console.log('Misskey Embed');
+console.log('Fedired Embed');
 
 //#region Embedパラメータの取得・パース
 const params = new URLSearchParams(location.search);

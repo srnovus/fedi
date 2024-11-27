@@ -25,10 +25,11 @@ import { confetti } from '@/scripts/confetti.js';
 
 const modal = shallowRef<InstanceType<typeof MkModal>>();
 
-function whatIsNew() {
-	modal.value?.close();
-	window.open(`https://misskey-hub.net/docs/releases/#_${version.replace(/\./g, '')}`, '_blank');
+	function whatIsNew() {
+    modal.value?.close();
+    window.open('https://github.com/fedired-dev/fedired/releases/latest', '_blank');
 }
+
 
 onMounted(() => {
 	confetti({
