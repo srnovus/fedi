@@ -85,13 +85,13 @@ sudo apt install ffmpeg
 ## 2. Configurar una base de datos
 
 1. Crear un usuario de base de datos
-    ```sh
-			sudo -u postgres psql
-			CREATE DATABASE fedired_db;
-			CREATE USER fedired WITH PASSWORD 'pichula';
-			GRANT ALL PRIVILEGES ON DATABASE fedired TO fedired_db;
-			\q
-    ```
+  ```sh
+	sudo -u postgres psql
+	CREATE DATABASE fedired_db;
+	CREATE USER fedired WITH PASSWORD 'pichula';
+	GRANT ALL PRIVILEGES ON DATABASE fedired_db TO fedired;
+	\q
+   ```
 
 2. Verifica la conexión
     ```sh
