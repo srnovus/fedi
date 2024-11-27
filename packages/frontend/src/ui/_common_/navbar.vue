@@ -7,30 +7,29 @@ SPDX-License-Identifier: AGPL-3.0-only
 <div :class="[$style.root, { [$style.iconOnly]: iconOnly }]">
 	<div :class="$style.body">
 		<div :class="$style.top">
-				<!-- Botón combinado con banner y cuenta -->
-<div :class="$style.accountContainer">
-  <!-- Banner de usuario -->
-  <div
-    class="banner"
-    :user="me"
-    :style="{ backgroundImage: `url(${me.bannerUrl})` }"
-  ></div>
 
-  <!-- Botón de cuenta -->
-  <button
-    v-if="$i != null"
-    v-click-anime
-    v-tooltip.noDelay.right="`${i18n.ts.account}: @${me.username}`"
-    class="_button"
-    :class="[$style.account]"
-    @click="openAccountMenu"
-  >
-    <!-- Avatar del usuario -->
-    <MkAvatar :user="$i" :class="$style.avatar" />
-    <!-- Nombre del usuario -->
-    <MkAcct class="_nowrap" :class="$style.acct" :user="$i" />
-  </button>
-</div>
+			<div :class="$style.accountContainer">
+          <!-- Banner de usuario -->
+          <div
+            class="banner"
+            :user="me"
+            :style="{ backgroundImage: `url(${user.bannerUrl})` }"
+          ></div>
+
+          <!-- Botón de cuenta -->
+          <button
+            v-if="$i != null"
+            v-click-anime
+            v-tooltip.noDelay.right="`${i18n.ts.account}: @${me.username}`"
+            class="_button"
+            :class="$style.account"
+            @click="openAccountMenu"
+          >
+            <MkAvatar :user="$i" :class="$style.avatar" />
+            <MkAcct class="_nowrap" :class="$style.acct" :user="$i" />
+          </button>
+        </div>
+      </div>
 
 		</div>
 		<div :class="$style.middle">
