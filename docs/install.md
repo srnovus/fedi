@@ -87,17 +87,25 @@ sudo apt install ffmpeg
 1. Crear un usuario de base de datos
   ```sh
 	sudo -u postgres psql
-	CREATE DATABASE fedired_db;
-	CREATE USER fedired WITH PASSWORD 'pichula';
-	GRANT ALL PRIVILEGES ON DATABASE fedired_db TO fedired;
+	CREATE DATABASE fedired;
+	CREATE USER fedired WITH PASSWORD 'password';
+	GRANT ALL PRIVILEGES ON DATABASE fedired TO fedired;
+	GRANT ALL ON SCHEMA public TO fedired;
+	GRANT CREATE ON SCHEMA public TO fedired;
+	ALTER SCHEMA public OWNER TO fedired;
+
+	\dn+ public
+
 	\q
+
+	sudo systemctl restart postgresql.service
    ```
 
 2. Verifica la conexión
-    ```sh
-		psql -h localhost -U fedired -d fedired_db
+  ```sh
+	psql -h localhost -U fedired -d fedired_db
 
-    ```
+  ```
 
 
 ## 3. Configurar Fedired
@@ -107,10 +115,7 @@ sudo apt install ffmpeg
    sudo useradd --create-home --user-group --shell /bin/bash fedired
    sudo passwd fedired
    sudo su --login fedired
-   
-   # check the current working directory
-   # the result should be /home/fedired
-   pwd
+ 
    ```
 2. Clonar el repositorio Fedired
     ```sh
@@ -152,28 +157,28 @@ sudo apt install ffmpeg
 ## 6. Publica tu servidor Fedired
 
 1. Crear un archivo de servicio
-    ```sh
-   		 sudo nano /etc/systemd/system/fedired.service
-    ```
+  ```sh
+  sudo nano /etc/systemd/system/fedired.service
+  ```
 
-    ```sh
-				[Unit]
-				Description=Misskey daemon
+  ```sh
+	Unit]
+	Description=Misskey daemon
 
-				[Service]
-				Type=simple
-				User=misskey
-				ExecStart=/usr/bin/npm start
-				WorkingDirectory=/home/misskey/misskey
-				Environment="NODE_ENV=production"
-				TimeoutSec=60
-				StandardOutput=journal
-				StandardError=journal
-				SyslogIdentifier=misskey
-				Restart=always
+	[Service]
+	Type=simple
+	User=misskey
+	ExecStart=/usr/bin/npm start
+	WorkingDirectory=/home/misskey/misskey
+	Environment="NODE_ENV=production"
+	TimeoutSec=60
+	StandardOutput=journal
+	StandardError=journal
+	SyslogIdentifier=misskey
+	Restart=always
 
-				[Install]
-				WantedBy=multi-user.target
+	[Install]
+	WantedBy=multi-user.target
     ```
 
 		```sh
