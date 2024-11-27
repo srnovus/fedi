@@ -66,10 +66,10 @@ html
 			var VERSION = "#{version}";
 			var CLIENT_ENTRY = "#{entry.file}";
 
-		script(type='application/json' id='fedired_meta' data-generated-at=now)
+		script(type='application/json' id='misskey_meta' data-generated-at=now)
 			!= metaJson
 
-		script(type='application/json' id='fedired_clientCtx' data-generated-at=now)
+		script(type='application/json' id='misskey_clientCtx' data-generated-at=now)
 			!= clientCtx
 
 		script

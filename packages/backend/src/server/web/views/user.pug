@@ -25,8 +25,8 @@ block meta
 		meta(name='robots' content='noimageai')
 		meta(name='robots' content='noai')
 
-	meta(name='fedired:user-username' content=user.username)
-	meta(name='fedired:user-id' content=user.id)
+	meta(name='misskey:user-username' content=user.username)
+	meta(name='misskey:user-id' content=user.id)
 
 	if profile.twitter
 		meta(name='twitter:creator' content=`@${profile.twitter.screenName}`)

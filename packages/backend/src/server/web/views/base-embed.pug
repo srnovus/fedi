@@ -42,10 +42,10 @@ html(class='embed')
 			var VERSION = "#{version}";
 			var CLIENT_ENTRY = "#{entry.file}";
 
-		script(type='application/json' id='fedired_meta' data-generated-at=now)
+		script(type='application/json' id='misskey_meta' data-generated-at=now)
 			!= metaJson
 
-		script(type='application/json' id='fedired_embedCtx' data-generated-at=now)
+		script(type='application/json' id='misskey_embedCtx' data-generated-at=now)
 			!= embedCtx
 
 		script
