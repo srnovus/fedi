@@ -436,7 +436,7 @@ exploreFediverse: "Jelajahi Fediverse"
 popularTags: "Tag populer"
 userList: "Daftar"
 about: "Informasi"
-aboutMisskey: "Tentang Misskey"
+aboutFedired: "Tentang Misskey"
 administrator: "Admin"
 token: "Token"
 2fa: "Autentikasi 2-faktor"
@@ -1833,7 +1833,7 @@ _registry:
   keys: "Kunci"
   domain: "Domain"
   createKey: "Buat kunci"
-_aboutMisskey:
+_aboutFedired:
   about: "Misskey adalah perangkat lunak sumber terbuka yang sedang dikembangkan oleh syuilo sejak 2014."
   contributors: "Kontributor utama"
   allContributors: "Seluruh kontributor"

@@ -443,7 +443,7 @@ exploreFediverse: "Fediverseを探索"
 popularTags: "人気のタグ"
 userList: "リスト"
 about: "情報"
-aboutMisskey: "Misskeyについて"
+aboutFedired: "Misskeyについて"
 administrator: "管理者"
 token: "確認コード"
 2fa: "二要素認証"
@@ -1925,7 +1925,7 @@ _registry:
   domain: "ドメイン"
   createKey: "キーを作成"
 
-_aboutMisskey:
+_aboutFedired:
   about: "Misskeyはsyuiloによって2014年から開発されている、オープンソースのソフトウェアです。"
   contributors: "コントリビューター"
   allContributors: "全てのコントリビューター"

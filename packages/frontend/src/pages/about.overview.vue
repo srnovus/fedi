@@ -29,7 +29,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 			</div>
 			<FormLink to="/about-fedired">
 				<template #icon><i class="ti ti-info-circle"></i></template>
-				{{ i18n.ts.aboutMisskey }}
+				{{ i18n.ts.aboutFedired }}
 			</FormLink>
 			<FormLink v-if="instance.repositoryUrl || instance.providesTarball" :to="instance.repositoryUrl || `/tarball/fedired-${version}.tar.gz`" external>
 				<template #icon><i class="ti ti-code"></i></template>

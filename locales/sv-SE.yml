@@ -374,7 +374,7 @@ exploreFediverse: "Utforska Fediverse"
 popularTags: "Populära taggar"
 userList: "Listor"
 about: "Om"
-aboutMisskey: "Om Misskey"
+aboutFedired: "Om Misskey"
 administrator: "Administratör"
 2fa: "Tvåfaktorsautentisering"
 totp: "Autentiseringsapp"
@@ -590,7 +590,7 @@ _gallery:
 _email:
   _follow:
     title: "följde dig"
-_aboutMisskey:
+_aboutFedired:
   source: "Källkod"
   projectMembers: "Projektmedlemmar"
 _channel:

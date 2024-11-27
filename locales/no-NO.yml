@@ -283,7 +283,7 @@ exploreUsersCount: "Det finnes {count} brukere"
 exploreFediverse: "Utforsk Fediverse"
 userList: "Lister"
 about: "Informasjon"
-aboutMisskey: "Om Misskey"
+aboutFedired: "Om Misskey"
 newPasswordIs: "Det nye passordet er \"{password}\"."
 share: "Del"
 notFound: "Ikke funnet"
@@ -562,7 +562,7 @@ _preferencesBackups:
 _registry:
   key: "Nøkkel"
   keys: "Nøkler"
-_aboutMisskey:
+_aboutFedired:
   about: "Misskey er programvare med åpen kildekode som har blitt utviklet av syuilo siden 2014."
   translation: "Oversett Misskey"
 _instanceTicker:

@@ -422,7 +422,7 @@ exploreFediverse: "Eksploruj Fediwersum"
 popularTags: "Tagi na czasie"
 userList: "Listy"
 about: "Informacje"
-aboutMisskey: "O Misskey"
+aboutFedired: "O Misskey"
 administrator: "Admin"
 token: "Token"
 2fa: "Klucz 2FA "
@@ -1131,7 +1131,7 @@ _registry:
   keys: "Klucz"
   domain: "Domena"
   createKey: "Utwórz klucz"
-_aboutMisskey:
+_aboutFedired:
   about: "Misskey jest oprogramowanie open source rozwijanym przez syuilo od 2014."
   contributors: "Główni twórcy"
   allContributors: "Wszyscy twórcy"

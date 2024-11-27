@@ -434,7 +434,7 @@ exploreFediverse: "Explorar fediverso"
 popularTags: "Etiquetas populares"
 userList: "Lista"
 about: "Información"
-aboutMisskey: "Sobre Misskey"
+aboutFedired: "Sobre Misskey"
 administrator: "Administrador"
 token: "Token"
 2fa: "Autenticación de doble factor"
@@ -1815,7 +1815,7 @@ _registry:
   keys: "Clave"
   domain: "Dominio"
   createKey: "Crear una llave"
-_aboutMisskey:
+_aboutFedired:
   about: "Plataforma social descentralizada impulsada por tecnología Fedired."
   contributors: "Principales colaboradores"
   allContributors: "Todos los colaboradores"

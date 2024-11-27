@@ -398,7 +398,7 @@ exploreFediverse: "استكشف الفديفرس"
 popularTags: "الوسوم الرائجة"
 userList: "القوائم"
 about: "عن"
-aboutMisskey: "عن Misskey"
+aboutFedired: "عن Misskey"
 administrator: "المدير"
 token: "الرمز المميز"
 2fa: "الاستيثاق بعاملَيْن"
@@ -1165,7 +1165,7 @@ _registry:
   keys: "المفاتيح"
   domain: "النّطاق"
   createKey: "أنشئ مفتاحًا"
-_aboutMisskey:
+_aboutFedired:
   about: "ميسكي هو برمجية مفتوحة المصدر يطورها syuilo منذ 2014."
   contributors: "المساهمون الرئيسيون"
   allContributors: "كل المساهمين"
