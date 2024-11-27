@@ -7,9 +7,31 @@ SPDX-License-Identifier: AGPL-3.0-only
 <div :class="[$style.root, { [$style.iconOnly]: iconOnly }]">
 	<div :class="$style.body">
 		<div :class="$style.top">
-			<button v-if="$i != null" v-tooltip.noDelay.right="`${i18n.ts.account}: @${$i.username}`" class="_button" :class="[$style.account]" @click="openAccountMenu">
-				<MkAvatar :user="$i" :class="$style.avatar"/><MkAcct class="_nowrap" :class="$style.acct" :user="$i"/>
-			</button>
+				<!-- Botón combinado con banner y cuenta -->
+<div :class="$style.accountContainer">
+  <!-- Banner de usuario -->
+  <div
+    class="banner"
+    :user="me"
+    :style="{ backgroundImage: `url(${me.bannerUrl})` }"
+  ></div>
+
+  <!-- Botón de cuenta -->
+  <button
+    v-if="$i != null"
+    v-click-anime
+    v-tooltip.noDelay.right="`${i18n.ts.account}: @${me.username}`"
+    class="_button"
+    :class="[$style.account]"
+    @click="openAccountMenu"
+  >
+    <!-- Avatar del usuario -->
+    <MkAvatar :user="$i" :class="$style.avatar" />
+    <!-- Nombre del usuario -->
+    <MkAcct class="_nowrap" :class="$style.acct" :user="$i" />
+  </button>
+</div>
+
 		</div>
 		<div :class="$style.middle">
 			<MkA v-tooltip.noDelay.right="i18n.ts.timeline" :class="$style.item" :activeClass="$style.active" to="/" exact>
@@ -202,16 +224,16 @@ function more(ev: MouseEvent) {
 		backdrop-filter: var(--MI-blur, blur(8px));
 	}
 
-	.banner {
+ .banner {
 		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
+		inset-block-start: 0;
+		border-inline-start: 0;
+		inline-size: 100%;
+		block-size: 100%;
 		background-size: cover;
 		background-position: center center;
-		-webkit-mask-image: linear-gradient(0deg, rgba(0,0,0,0) 15%, rgba(0,0,0,0.75) 100%);
-		mask-image: linear-gradient(0deg, rgba(0,0,0,0) 15%, rgba(0,0,0,0.75) 100%);
+	 -webkit-mask-image: linear-gradient(var(--gradient));
+	 mask-image: linear-gradient(var(--gradient));
 	}
 
 	.instance {
