@@ -85,71 +85,61 @@ sudo apt install ffmpeg
 ## 2. Configurar una base de datos
 
 1. Crear un usuario de base de datos
-  ```sh
-	sudo -u postgres psql
-	CREATE DATABASE fedired;
-	CREATE USER fedired WITH PASSWORD 'password';
-	GRANT ALL PRIVILEGES ON DATABASE fedired TO fedired;
-	GRANT ALL ON SCHEMA public TO fedired;
-	GRANT CREATE ON SCHEMA public TO fedired;
-	ALTER SCHEMA public OWNER TO fedired;
+```sh
+sudo -u postgres psql
+CREATE DATABASE fedired;
+CREATE USER fedired WITH PASSWORD 'password';
+GRANT ALL PRIVILEGES ON DATABASE fedired TO fedired;
+GRANT ALL ON SCHEMA public TO fedired;
+GRANT CREATE ON SCHEMA public TO fedired;
+ALTER SCHEMA public OWNER TO fedired;
 
-	\dn+ public
+\dn+ public
 
-	\q
+\q
 
-	sudo systemctl restart postgresql.service
-   ```
+sudo systemctl restart postgresql.service
+```
 
 2. Verifica la conexión
-  ```sh
-	psql -h localhost -U fedired -d fedired_db
+```sh
+psql -h localhost -U fedired -d fedired_db
 
-  ```
+```
 
 
 ## 3. Configurar Fedired
 
 1. Crear un usuario para Fedired y cambiar de usuario
-   ```sh
-   sudo useradd --create-home --user-group --shell /bin/bash fedired
-   sudo passwd fedired
-   sudo su --login fedired
+```sh
+sudo useradd --create-home --user-group --shell /bin/bash fedired
+sudo passwd fedired
+sudo su --login fedired
  
-   ```
+```
 2. Clonar el repositorio Fedired
-    ```sh
-    git clone --branch=nvus https://github.com/fedired-dev/fedired.git
-    ```
-1. Copiar y editar el archivo de configuración
-    ```sh
-		git checkout master
-    cd fedired
-    cp .config/example.yml .config/default.yml
-    nano .config/default.yml
-    ```
+```sh
+git clone --branch=nvus https://github.com/fedired-dev/fedired.git
+```
 
-    ```yaml
-    url: https://your-server-domain.example.com  # change here
-    port: 3000
-    
-    db:
-      host: localhost
-      port: 5432
-      db: fedired_db
-      user: fedired
-      pass: your-database-password  # and here
-    ```
+1. Copiar y editar el archivo de configuración
+```sh
+git checkout master
+cd fedired
+cp .config/example.yml .config/default.yml
+nano .config/default.yml
+```
+
 
 ## 4. Construir Fedired
 
 1. Construir
-    ```sh
-		git submodule update --init
-		NODE_ENV=production pnpm install --frozen-lockfile
-		NODE_ENV=production pnpm run build
-		pnpm run init
-    ```
+```sh
+git submodule update --init
+NODE_ENV=production pnpm install --frozen-lockfile
+NODE_ENV=production pnpm run build
+pnpm run init
+```
 
 
 ## 5. Publica tu servidor Fedired
@@ -157,40 +147,40 @@ sudo apt install ffmpeg
 ## 6. Publica tu servidor Fedired
 
 1. Crear un archivo de servicio
-  ```sh
-  sudo nano /etc/systemd/system/fedired.service
-  ```
+```sh
+sudo nano /etc/systemd/system/fedired.service
+```
 
-  ```sh
-	Unit]
-	Description=Misskey daemon
+```sh
+[Unit]
+Description=Misskey daemon
 
-	[Service]
-	Type=simple
-	User=misskey
-	ExecStart=/usr/bin/npm start
-	WorkingDirectory=/home/misskey/misskey
-	Environment="NODE_ENV=production"
-	TimeoutSec=60
-	StandardOutput=journal
-	StandardError=journal
-	SyslogIdentifier=misskey
-	Restart=always
+[Service]
+Type=simple
+User=misskey
+ExecStart=/usr/bin/npm start
+WorkingDirectory=/home/misskey/misskey
+Environment="NODE_ENV=production"
+TimeoutSec=60
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=misskey
+Restart=always
 
-	[Install]
-	WantedBy=multi-user.target
-    ```
+[Install]
+WantedBy=multi-user.target
+```
 
-		```sh
-		sudo systemctl daemon-reload
-		sudo systemctl enable misskey
-		```
+```sh
+sudo systemctl daemon-reload
+sudo systemctl enable misskey
+```
 
 
 1. Iniciar Fedired
-    ```sh
-			NODE_ENV=production pnpm run start
-    ```
+```sh
+NODE_ENV=production pnpm run start
+```
 
 # 🎉 ¡Felicidades! 🎉
 
