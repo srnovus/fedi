@@ -443,7 +443,7 @@ exploreFediverse: "Explore the Fediverse"
 popularTags: "Popular tags"
 userList: "Lists"
 about: "About"
-aboutFedired: "About Misskey"
+aboutMisskey: "About Misskey"
 administrator: "Administrator"
 token: "Token"
 2fa: "Two-factor authentication"
@@ -1896,7 +1896,7 @@ _registry:
   keys: "Keys"
   domain: "Domain"
   createKey: "Create key"
-_aboutFedired:
+_aboutMisskey:
   about: "Misskey is open-source software being developed by syuilo since 2014."
   contributors: "Main contributors"
   allContributors: "All contributors"

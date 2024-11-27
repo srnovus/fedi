@@ -1793,7 +1793,7 @@ export interface Locale extends ILocale {
     /**
      * Misskeyについて
      */
-    "aboutFedired": string;
+    "aboutMisskey": string;
     /**
      * 管理者
      */
@@ -7385,7 +7385,7 @@ export interface Locale extends ILocale {
          */
         "createKey": string;
     };
-    "_aboutFedired": {
+    "_aboutMisskey": {
         /**
          * Misskeyはsyuiloによって2014年から開発されている、オープンソースのソフトウェアです。
          */

@@ -443,7 +443,7 @@ exploreFediverse: "探索聯邦宇宙"
 popularTags: "熱門標籤"
 userList: "使用者清單"
 about: "關於"
-aboutFedired: "關於 Misskey"
+aboutMisskey: "關於 Misskey"
 administrator: "管理員"
 token: "權杖"
 2fa: "雙重驗證"
@@ -1899,7 +1899,7 @@ _registry:
   keys: "機碼"
   domain: "域"
   createKey: "新增機碼"
-_aboutFedired:
+_aboutMisskey:
   about: "Misskey 是由 syuilo 自 2014 年起開發的開放原始碼軟體。"
   contributors: "主要貢獻者"
   allContributors: "全體貢獻人員"

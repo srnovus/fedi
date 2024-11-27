@@ -437,7 +437,7 @@ exploreFediverse: "Explorar Fediverse"
 popularTags: "Tags populares"
 userList: "Listas"
 about: "Informações"
-aboutFedired: "Sobre Misskey"
+aboutMisskey: "Sobre Misskey"
 administrator: "Administrador"
 token: "Símbolo"
 2fa: "Autenticação de dois fatores"
@@ -1829,7 +1829,7 @@ _registry:
   keys: "Chave"
   domain: "Domínio"
   createKey: "Criar chave"
-_aboutFedired:
+_aboutMisskey:
   about: "Misskey é um software de código aberto desenvolvido por syulio desde 2014."
   contributors: "Contribuidores principais"
   allContributors: "Todos os contribuidores"

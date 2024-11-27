@@ -438,7 +438,7 @@ exploreFediverse: "Исследуйте Fediverse"
 popularTags: "Популярные теги"
 userList: "Списки"
 about: "Описание"
-aboutFedired: "О Misskey"
+aboutMisskey: "О Misskey"
 administrator: "Администратор"
 token: "Токен"
 2fa: "Двухфакторная аутентификация"
@@ -1592,7 +1592,7 @@ _registry:
   keys: "Ключ"
   domain: "Домен"
   createKey: "Новый ключ"
-_aboutFedired:
+_aboutMisskey:
   about: "Misskey — программа с открытым исходным кодом, которую разрабатывает syuilo с 2014 года."
   contributors: "Основные соавторы"
   allContributors: "Все соавторы"

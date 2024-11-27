@@ -150,7 +150,7 @@ export function openInstanceMenu(ev: MouseEvent) {
 
 	menuItems.push({
 		type: 'link',
-		text: i18n.ts.aboutFedired,
+		text: i18n.ts.aboutMisskey,
 		to: '/about-fedired',
 	});
 

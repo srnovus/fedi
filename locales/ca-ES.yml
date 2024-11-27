@@ -443,7 +443,7 @@ exploreFediverse: "Explora el fedivers"
 popularTags: "Etiquetes populars"
 userList: "Llistes"
 about: "Informació"
-aboutFedired: "Quant a Misskey"
+aboutMisskey: "Quant a Misskey"
 administrator: "Administrador/a"
 token: "Codi de verificació"
 2fa: "Autenticació de doble factor"
@@ -1899,7 +1899,7 @@ _registry:
   keys: "Claus"
   domain: "Domini"
   createKey: "Crear una clau"
-_aboutFedired:
+_aboutMisskey:
   about: "Misskey és un programa de codi obert desenvolupar per syuilo des de 2014"
   contributors: "Col·laboradors principals"
   allContributors: "Tots els col·laboradors "

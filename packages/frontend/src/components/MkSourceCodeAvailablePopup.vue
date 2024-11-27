@@ -20,14 +20,14 @@ SPDX-License-Identifier: AGPL-3.0-only
 			</I18n>
 		</div>
 		<div :class="$style.text">
-			<I18n :src="i18n.ts._aboutFedired.thisIsModifiedVersion" tag="span">
+			<I18n :src="i18n.ts._aboutMisskey.thisIsModifiedVersion" tag="span">
 				<template #name>
 					{{ instance.name ?? host }}
 				</template>
 			</I18n>
 			<I18n :src="i18n.ts.correspondingSourceIsAvailable" tag="span">
 				<template #anchor>
-					<MkA to="/about-fedired" class="_link">{{ i18n.ts.aboutFedired }}</MkA>
+					<MkA to="/about-fedired" class="_link">{{ i18n.ts.aboutMisskey }}</MkA>
 				</template>
 			</I18n>
 		</div>

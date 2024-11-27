@@ -443,7 +443,7 @@ exploreFediverse: "สำรวจสหพันธ์"
 popularTags: "แท็กยอดนิยม"
 userList: "ลิสต์"
 about: "เกี่ยวกับ"
-aboutFedired: "เกี่ยวกับ Misskey"
+aboutMisskey: "เกี่ยวกับ Misskey"
 administrator: "ผู้ดูแลระบบ"
 token: "โทเค็น"
 2fa: "การยืนยันตัวตนแบบสองชั้น"
@@ -1876,7 +1876,7 @@ _registry:
   keys: "คีย์"
   domain: "โดเมน"
   createKey: "สร้างคีย์"
-_aboutFedired:
+_aboutMisskey:
   about: "Misskey เป็นซอฟต์แวร์โอเพ่นซอร์สที่ถูกพัฒนาโดย Syuilo ตั้งแต่ปี 2014"
   contributors: "ผู้สนับสนุนหลัก"
   allContributors: "ผู้มีส่วนร่วมทั้งหมด"

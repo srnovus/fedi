@@ -405,7 +405,7 @@ exploreFediverse: "Objevovat Fediverse"
 popularTags: "Populární tagy"
 userList: "Seznamy"
 about: "Informace"
-aboutFedired: "O Misskey"
+aboutMisskey: "O Misskey"
 administrator: "Administrátor"
 token: "Token"
 2fa: "Dvoufázové ověření"
@@ -1518,7 +1518,7 @@ _registry:
   keys: "Klíče"
   domain: "Doména"
   createKey: "Vytvořit klíč"
-_aboutFedired:
+_aboutMisskey:
   about: "Misskey je open-source software vyvíjený syuilo od roku 2014."
   contributors: "Hlavní přispěvatelé"
   allContributors: "Všichni přispěvatelé"

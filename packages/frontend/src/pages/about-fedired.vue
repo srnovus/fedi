@@ -22,7 +22,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 					<button v-if="thereIsTreasure" class="_button treasure" @click="getTreasure"><img src="/fluent-emoji/1f3c6.png" class="treasureImg"></button>
 				</div>
 				<div style="text-align: center;">
-					{{ i18n.ts._aboutFedired.about }}<br><a href="https://sushell.com/docs/about-fedired/" target="_blank" class="_link">{{ i18n.ts.learnMore }}</a>
+					{{ i18n.ts._aboutMisskey.about }}<br><a href="https://sushell.com/docs/about-fedired/" target="_blank" class="_link">{{ i18n.ts.learnMore }}</a>
 				</div>
 				<div v-if="$i != null" style="text-align: center;">
 					<MkButton primary rounded inline @click="iLoveFedired">I <Mfm text="$[jelly ❤]"/> #Fedired</MkButton>
@@ -31,17 +31,17 @@ SPDX-License-Identifier: AGPL-3.0-only
 					<div class="_gaps_s">
 						<FormLink to="https://github.com/fedired-dev/fedired" external>
 							<template #icon><i class="ti ti-code"></i></template>
-							{{ i18n.ts._aboutFedired.source }} ({{ i18n.ts._aboutFedired.original }})
+							{{ i18n.ts._aboutMisskey.source }} ({{ i18n.ts._aboutMisskey.original }})
 							<template #suffix>GitHub</template>
 						</FormLink>
 						<FormLink to="https://crowdin.com/project/fedired" external>
 							<template #icon><i class="ti ti-language-hiragana"></i></template>
-							{{ i18n.ts._aboutFedired.translation }}
+							{{ i18n.ts._aboutMisskey.translation }}
 							<template #suffix>Crowdin</template>
 						</FormLink>
 						<FormLink to="https://www.patreon.com/fedired" external>
 							<template #icon><i class="ti ti-pig-money"></i></template>
-							{{ i18n.ts._aboutFedired.donate }}
+							{{ i18n.ts._aboutMisskey.donate }}
 							<template #suffix>Patreon</template>
 						</FormLink>
 					</div>
@@ -49,15 +49,15 @@ SPDX-License-Identifier: AGPL-3.0-only
 				<FormSection v-if="instance.repositoryUrl !== 'https://github.com/fedired-dev/fedired'">
 					<div class="_gaps_s">
 						<MkInfo>
-							{{ i18n.tsx._aboutFedired.thisIsModifiedVersion({ name: instance.name }) }}
+							{{ i18n.tsx._aboutMisskey.thisIsModifiedVersion({ name: instance.name }) }}
 						</MkInfo>
 						<FormLink v-if="instance.repositoryUrl" :to="instance.repositoryUrl" external>
 							<template #icon><i class="ti ti-code"></i></template>
-							{{ i18n.ts._aboutFedired.source }}
+							{{ i18n.ts._aboutMisskey.source }}
 						</FormLink>
 						<FormLink v-if="instance.providesTarball" :to="`/tarball/fedired-${version}.tar.gz`" external>
 							<template #icon><i class="ti ti-download"></i></template>
-							{{ i18n.ts._aboutFedired.source }}
+							{{ i18n.ts._aboutMisskey.source }}
 							<template #suffix>Tarball</template>
 						</FormLink>
 						<MkInfo v-if="!instance.repositoryUrl && !instance.providesTarball" warn>
@@ -66,7 +66,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 					</div>
 				</FormSection>
 				<FormSection>
-					<template #label>{{ i18n.ts._aboutFedired.projectMembers }}</template>
+					<template #label>{{ i18n.ts._aboutMisskey.projectMembers }}</template>
 					<div :class="$style.contributors">
 						<a href="https://github.com/syuilo" target="_blank" :class="$style.contributor">
 							<img src="https://avatars.githubusercontent.com/u/4439005?v=4" :class="$style.contributorAvatar">
@@ -79,7 +79,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 					</div>
 				</FormSection>
 				<FormSection>
-					<template #label><Mfm text="$[jelly ❤]"/> {{ i18n.ts._aboutFedired.patrons }}</template>
+					<template #label><Mfm text="$[jelly ❤]"/> {{ i18n.ts._aboutMisskey.patrons }}</template>
 					<div :class="$style.patronsWithIcon">
 						<div v-for="patron in patronsWithIcon" :class="$style.patronWithIcon">
 							<img :src="patron.icon" :class="$style.patronIcon">
@@ -89,7 +89,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 					<div style="margin-top: 16px; display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); grid-gap: 12px;">
 						<div v-for="patron in patrons" :key="patron">{{ patron }}</div>
 					</div>
-					<p>{{ i18n.ts._aboutFedired.morePatrons }}</p>
+					<p>{{ i18n.ts._aboutMisskey.morePatrons }}</p>
 				</FormSection>
 			</div>
 		</MkSpacer>
@@ -187,7 +187,7 @@ const headerActions = computed(() => []);
 const headerTabs = computed(() => []);
 
 definePageMetadata(() => ({
-	title: i18n.ts.aboutFedired,
+	title: i18n.ts.aboutMisskey,
 	icon: null,
 }));
 </script>
