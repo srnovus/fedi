@@ -28,7 +28,6 @@ SPDX-License-Identifier: AGPL-3.0-only
             <MkAvatar :user="$i" :class="$style.avatar" />
             <MkAcct class="_nowrap" :class="$style.acct" :user="$i" />
           </button>
-        </div>
       </div>
 
 		</div>
