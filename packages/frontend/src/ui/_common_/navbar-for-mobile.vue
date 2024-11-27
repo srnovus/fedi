@@ -6,6 +6,26 @@ SPDX-License-Identifier: AGPL-3.0-only
 <template>
 <div :class="$style.root">
 	<div :class="$style.top">
+		<div
+					class="banner"
+					:user="me"
+					:style="{ backgroundImage: `url(${me.bannerUrl})` }"
+				></div>
+				<button
+					v-click-anime
+					v-tooltip.noDelay.right="
+						`${i18n.ts.account}: @${me.username}`
+					"
+					class="item _button account"
+					@click="openAccountMenu"
+				>
+					<MkAvatar
+						:user="me"
+						class="icon"
+						disable-link
+					/><!-- <MkAcct class="text" :user="me"/> -->
+				</button>
+			</div>
 		<div :class="$style.banner" :style="{ backgroundImage: `url(${ instance.bannerUrl })` }"></div>
 		<button class="_button" :class="$style.instance" @click="openInstanceMenu">
 			<img :src="instance.iconUrl || instance.faviconUrl || '/favicon.ico'" alt="" :class="$style.instanceIcon"/>
