@@ -26,7 +26,7 @@ export const Default = {
 					};
 				},
 			},
-			template: '<MkA v-bind="props">Misskey</MkA>',
+			template: '<MkA v-bind="props">Fedired</MkA>',
 		};
 	},
 	async play({ canvasElement }) {

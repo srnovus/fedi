@@ -26,7 +26,7 @@ import { setupRouter } from '@/router/main.js';
 import { createMainRouter } from '@/router/definition.js';
 
 export async function common(createVue: () => App<Element>) {
-	console.info(`Misskey v${version}`);
+	console.info(`Fedired v${version}`);
 
 	if (_DEV_) {
 		console.warn('Development mode!!!');
@@ -139,7 +139,7 @@ export async function common(createVue: () => App<Element>) {
 			}
 		}
 
-		history.replaceState({ misskey: 'loginId' }, '', target);
+		history.replaceState({ fedired: 'loginId' }, '', target);
 	}
 	//#endregion
 
@@ -250,7 +250,7 @@ export async function common(createVue: () => App<Element>) {
 	// https://github.com/misskey-dev/misskey/pull/8575#issuecomment-1114239210
 	// なぜか2回実行されることがあるため、mountするdivを1つに制限する
 	const rootEl = ((): HTMLElement => {
-		const MISSKEY_MOUNT_DIV_ID = 'misskey_app';
+		const MISSKEY_MOUNT_DIV_ID = 'fedired_app';
 
 		const currentRoot = document.getElementById(MISSKEY_MOUNT_DIV_ID);
 

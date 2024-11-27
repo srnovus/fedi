@@ -22,31 +22,31 @@ SPDX-License-Identifier: AGPL-3.0-only
 					<button v-if="thereIsTreasure" class="_button treasure" @click="getTreasure"><img src="/fluent-emoji/1f3c6.png" class="treasureImg"></button>
 				</div>
 				<div style="text-align: center;">
-					{{ i18n.ts._aboutMisskey.about }}<br><a href="https://misskey-hub.net/docs/about-misskey/" target="_blank" class="_link">{{ i18n.ts.learnMore }}</a>
+					{{ i18n.ts._aboutMisskey.about }}<br><a href="https://sushell.com/docs/about-fedired/" target="_blank" class="_link">{{ i18n.ts.learnMore }}</a>
 				</div>
 				<div v-if="$i != null" style="text-align: center;">
 					<MkButton primary rounded inline @click="iLoveFedired">I <Mfm text="$[jelly ❤]"/> #Fedired</MkButton>
 				</div>
 				<FormSection>
 					<div class="_gaps_s">
-						<FormLink to="https://github.com/misskey-dev/misskey" external>
+						<FormLink to="https://github.com/fedired-dev/fedired" external>
 							<template #icon><i class="ti ti-code"></i></template>
 							{{ i18n.ts._aboutMisskey.source }} ({{ i18n.ts._aboutMisskey.original }})
 							<template #suffix>GitHub</template>
 						</FormLink>
-						<FormLink to="https://crowdin.com/project/misskey" external>
+						<FormLink to="https://crowdin.com/project/fedired" external>
 							<template #icon><i class="ti ti-language-hiragana"></i></template>
 							{{ i18n.ts._aboutMisskey.translation }}
 							<template #suffix>Crowdin</template>
 						</FormLink>
-						<FormLink to="https://www.patreon.com/syuilo" external>
+						<FormLink to="https://www.patreon.com/fedired" external>
 							<template #icon><i class="ti ti-pig-money"></i></template>
 							{{ i18n.ts._aboutMisskey.donate }}
 							<template #suffix>Patreon</template>
 						</FormLink>
 					</div>
 				</FormSection>
-				<FormSection v-if="instance.repositoryUrl !== 'https://github.com/misskey-dev/misskey'">
+				<FormSection v-if="instance.repositoryUrl !== 'https://github.com/fedired-dev/fedired'">
 					<div class="_gaps_s">
 						<MkInfo>
 							{{ i18n.tsx._aboutMisskey.thisIsModifiedVersion({ name: instance.name }) }}
@@ -55,7 +55,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 							<template #icon><i class="ti ti-code"></i></template>
 							{{ i18n.ts._aboutMisskey.source }}
 						</FormLink>
-						<FormLink v-if="instance.providesTarball" :to="`/tarball/misskey-${version}.tar.gz`" external>
+						<FormLink v-if="instance.providesTarball" :to="`/tarball/fedired-${version}.tar.gz`" external>
 							<template #icon><i class="ti ti-download"></i></template>
 							{{ i18n.ts._aboutMisskey.source }}
 							<template #suffix>Tarball</template>
@@ -114,16 +114,19 @@ import { claimAchievement, claimedAchievements } from '@/scripts/achievements.js
 import { $i } from '@/account.js';
 
 const patronsWithIcon = [{
-	name: 'Edgar Argueta',
+	name: ' ',
 	icon: 'https://as2.ftcdn.net/v2/jpg/00/65/77/27/1000_F_65772719_A1UV5kLi5nCEWI0BNLLiFaBPEkUbv5Fv.jpg',
 }, {
 
-	name: 'Joshua',
+	name: ' ',
 	icon: 'https://as2.ftcdn.net/v2/jpg/00/65/77/27/1000_F_65772719_A1UV5kLi5nCEWI0BNLLiFaBPEkUbv5Fv.jpg',
 }];
 
 const patrons = [
 	'j-rec',
+	'Josua',
+	'iBoo Tech',
+
 ];
 
 const thereIsTreasure = ref($i && !claimedAchievements.includes('foundTreasure'));

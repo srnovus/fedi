@@ -203,8 +203,8 @@ const routes: RouteDef[] = [{
 	path: '/contact',
 	component: page(() => import('@/pages/contact.vue')),
 }, {
-	path: '/about-misskey',
-	component: page(() => import('@/pages/about-misskey.vue')),
+	path: '/about-fedired',
+	component: page(() => import('@/pages/about-fedired.vue')),
 }, {
 	path: '/invite',
 	name: 'invite',
