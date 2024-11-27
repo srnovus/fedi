@@ -132,7 +132,7 @@ export function openInstanceMenu(ev: MouseEvent) {
 		type: 'a',
 		text: i18n.ts.document,
 		icon: 'ti ti-bulb',
-		href: 'https://misskey-hub.net/docs/for-users/',
+		href: 'help.fedired.com/docs/for-users/',
 		target: '_blank',
 	});
 

@@ -101,7 +101,7 @@ function openRemote(options: OpenOnRemoteOptions, targetHost?: string): void {
 			if (targetHost) {
 				window.open(`https://${targetHost}${_path}`, '_blank', 'noopener');
 			} else {
-				window.open(`https://misskey-hub.net/mi-web/?path=${encodeURIComponent(_path)}`, '_blank', 'noopener');
+				window.open(`help.fedired.com/mi-web/?path=${encodeURIComponent(_path)}`, '_blank', 'noopener');
 			}
 			break;
 		}
@@ -110,7 +110,7 @@ function openRemote(options: OpenOnRemoteOptions, targetHost?: string): void {
 			if (targetHost) {
 				window.open(`https://${targetHost}/share?${params}`, '_blank', 'noopener');
 			} else {
-				window.open(`https://misskey-hub.net/share/?${params}`, '_blank', 'noopener');
+				window.open(`help.fedired.com/share/?${params}`, '_blank', 'noopener');
 			}
 			break;
 		}

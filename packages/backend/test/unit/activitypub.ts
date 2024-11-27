@@ -448,7 +448,7 @@ describe('ActivityPub', () => {
 				'@context': [
 					'https://www.w3.org/ns/activitystreams',
 					{
-						_misskey_quote: 'https://misskey-hub.net/ns#_misskey_quote',
+						_misskey_quote: 'help.fedired.com/ns#_misskey_quote',
 						unknown: 'https://example.org/ns#unknown',
 						undefined: null,
 					},

@@ -5,14 +5,14 @@
 
 **🌎 **Misskey** is an open source, federated social media platform that's free forever! 🚀**
 
-[Learn more](https://misskey-hub.net/)
+[Learn more](help.fedired.com/)
 
 ---
 
-<a href="https://misskey-hub.net/servers/">
+<a href="help.fedired.com/servers/">
 		<img src="https://custom-icon-badges.herokuapp.com/badge/find_an-instance-acea31?logoColor=acea31&style=for-the-badge&logo=misskey&labelColor=363B40" alt="find an instance"/></a>
 
-<a href="https://misskey-hub.net/docs/for-admin/install/guides/">
+<a href="help.fedired.com/docs/for-admin/install/guides/">
 		<img src="https://custom-icon-badges.herokuapp.com/badge/create_an-instance-FBD53C?logoColor=FBD53C&style=for-the-badge&logo=server&labelColor=363B40" alt="create an instance"/></a>
 
 <a href="./CONTRIBUTING.md">

@@ -30,7 +30,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 </template>
 
 <script lang="ts" setup>
-// SPECIFICATION: https://misskey-hub.net/docs/for-users/features/share-form/
+// SPECIFICATION: help.fedired.com/docs/for-users/features/share-form/
 
 import { ref, computed } from 'vue';
 import * as Misskey from 'fedired-js';

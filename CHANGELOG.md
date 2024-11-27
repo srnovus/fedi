@@ -148,7 +148,7 @@
 
 ### General
 - Feat: ノート単体・ユーザーのノート・クリップのノートの埋め込み機能
-  - 埋め込みコードやウェブサイトへの実装方法の詳細は https://misskey-hub.net/docs/for-users/features/embed/ をご覧ください
+  - 埋め込みコードやウェブサイトへの実装方法の詳細は help.fedired.com/docs/for-users/features/embed/ をご覧ください
 - Feat: パスキーでログインボタンを実装 (#14574)
 - Feat: フォローされた際のメッセージを設定できるように
 - Feat: 連合をホワイトリスト制にできるように
@@ -787,7 +787,7 @@
 ### General
 - Feat: アイコンデコレーション機能
 	- サーバーで用意された画像をアイコンに重ねることができます
-	- 画像のテンプレートはこちらです: https://misskey-hub.net/brand-assets/
+	- 画像のテンプレートはこちらです: help.fedired.com/brand-assets/
 		- 最大でも黄色いエリア内にデコレーションを収めることを推奨します。
 		- 画像は512x512pxを推奨します。
 - Feat: チャンネル設定にリノート／引用リノートの可否を設定できる項目を追加
@@ -804,7 +804,7 @@
 ### Client
 - Feat: プラグイン・テーマを外部サイトから直接インストールできるようになりました
 	- 外部サイトでの実装が必要です。詳細は Misskey Hub をご覧ください
-	  https://misskey-hub.net/docs/for-developers/publish-on-your-website/
+	  help.fedired.com/docs/for-developers/publish-on-your-website/
 - Feat: 通知をグルーピングして表示するオプション(オプトアウト)
 - Feat: Misskeyの基本的なチュートリアルを実装
 - Feat: スワイプしてタイムラインを再読込できるように

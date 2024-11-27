@@ -17,7 +17,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 				<div>{{ i18n.ts.youShouldUpgradeClient }}</div>
 				<MkButton style="margin: 8px auto;" @click="reload">{{ i18n.ts.reload }}</MkButton>
 			</template>
-			<div><MkLink url="https://misskey-hub.net/docs/for-users/resources/troubleshooting/" target="_blank">{{ i18n.ts.troubleshooting }}</MkLink></div>
+			<div><MkLink url="help.fedired.com/docs/for-users/resources/troubleshooting/" target="_blank">{{ i18n.ts.troubleshooting }}</MkLink></div>
 			<div v-if="error" style="opacity: 0.7;">ERROR: {{ error }}</div>
 		</div>
 	</div>

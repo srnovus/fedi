@@ -57,7 +57,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 						<template #label>{{ i18n.ts.enable }}<span v-if="fttForm.modifiedStates.enableFanoutTimeline" class="_modified">{{ i18n.ts.modified }}</span></template>
 						<template #caption>
 							<div>{{ i18n.ts._serverSettings.fanoutTimelineDescription }}</div>
-							<div><MkLink target="_blank" url="https://misskey-hub.net/docs/for-admin/features/ftt/">{{ i18n.ts.details }}</MkLink></div>
+							<div><MkLink target="_blank" url="help.fedired.com/docs/for-admin/features/ftt/">{{ i18n.ts.details }}</MkLink></div>
 						</template>
 					</MkSwitch>
 

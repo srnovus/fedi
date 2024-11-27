@@ -33,25 +33,25 @@ export const Default = {
 	async play({ canvasElement }) {
 		const canvas = within(canvasElement);
 		const a = canvas.getByRole<HTMLAnchorElement>('link');
-		await expect(a).toHaveAttribute('href', 'https://misskey-hub.net/');
+		await expect(a).toHaveAttribute('href', 'help.fedired.com/');
 		await waitFor(() => userEvent.hover(a));
 		/*
 		await tick(); // FIXME: wait for network request
 		const anchors = canvas.getAllByRole<HTMLAnchorElement>('link');
 		const popup = anchors.find(anchor => anchor !== a)!; // eslint-disable-line @typescript-eslint/no-non-null-assertion
 		await expect(popup).toBeInTheDocument();
-		await expect(popup).toHaveAttribute('href', 'https://misskey-hub.net/');
+		await expect(popup).toHaveAttribute('href', 'help.fedired.com/');
 		await expect(popup).toHaveTextContent('Misskey Hub');
 		await expect(popup).toHaveTextContent('Misskeyはオープンソースの分散型ソーシャルネットワーキングプラットフォームです。');
 		await expect(popup).toHaveTextContent('misskey-hub.net');
 		const icon = within(popup).getByRole('img');
 		await expect(icon).toBeInTheDocument();
-		await expect(icon).toHaveAttribute('src', 'https://misskey-hub.net/favicon.ico');
+		await expect(icon).toHaveAttribute('src', 'help.fedired.com/favicon.ico');
 		 */
 		await waitFor(() => userEvent.unhover(a));
 	},
 	args: {
-		url: 'https://misskey-hub.net/',
+		url: 'help.fedired.com/',
 	},
 	parameters: {
 		layout: 'centered',
@@ -61,7 +61,7 @@ export const Default = {
 				http.get('/url', () => {
 					return HttpResponse.json({
 						title: 'Misskey Hub',
-						icon: 'https://misskey-hub.net/favicon.ico',
+						icon: 'help.fedired.com/favicon.ico',
 						description: 'Misskeyはオープンソースの分散型ソーシャルネットワーキングプラットフォームです。',
 						thumbnail: null,
 						player: {
@@ -72,7 +72,7 @@ export const Default = {
 						},
 						sitename: 'misskey-hub.net',
 						sensitive: false,
-						url: 'https://misskey-hub.net/',
+						url: 'help.fedired.com/',
 					});
 				}),
 			],
