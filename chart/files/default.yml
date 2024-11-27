@@ -59,11 +59,11 @@ db:
   port: 5432
 
   # Database name
-  db: misskey
+  db: fedired
 
   # Auth
-  user: example-misskey-user
-  pass: example-misskey-pass
+  user: fedired
+  pass: password
 
   # Whether disable Caching queries
   #disableCache: true

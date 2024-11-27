@@ -116,8 +116,8 @@ db:
   db: fedired
 
   # Auth
-  user: example-fedired-user
-  pass: example-fedired-pass
+  user: fedired
+  pass: password
 
   # Whether disable Caching queries
   #disableCache: true
